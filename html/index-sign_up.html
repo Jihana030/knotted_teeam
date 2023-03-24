@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index-sign_up.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <title>sing_up</title>
+</head>
+<body>
+    <!--마우스커서 커스텀-->
+    <div id="cursor"></div>
+  <script src="./js/mouseCurser.js"></script>
+  <!-- header -->
+    <div id="wrapper">
+        <div id="header">
+            <nav>
+                <div class="logo" data-menuanchor="section1">
+                    <a href="#section1">KNOTTED</a>
+                </div>
+                <div class="category">
+                    <ul class="menu">
+                        <li data-menuanchor="section2" class="none768">
+                            <a href="#section2">DONUT</a>
+                        </li>
+                        <li data-menuanchor="section3" class="none768">
+                            <a href="#section3">DESSERT</a>
+                        </li>
+                        <li data-menuanchor="section4" class="none768">
+                            <a href="#section4">GOODS</a>
+                        </li>
+                        <li data-menuanchor="section5" class="none768">
+                            <a href="#section5">CAFE</a>
+                        </li>
+                        <li data-menuanchor="section6" class="none768">
+                            <a href="#section6">EVENT & PROMOTION</a>
+                        </li>
+                        <li data-menuanchor="section7" class="none768">
+                            <a href="#section7">ABOUT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn hover">
+                    <a href="#">
+                        <span class="login">LOG I N</span>
+                    </a>
+                </div>
+
+                <!-- search form -->
+                <div>
+                    <button type='button' id="modal_btn" class="btn-allmenu btn-allmenu1"></button>
+                    <div class="black_bg"></div>
+                    <div class="modal_wrap">
+                        <div class="modal_close"><a href="#"><img src="./image/버튼 호버_창닫기 icon.png"></a></div>
+                        <div class="search-div">
+                            <form action="" class="search-form">
+                                <input type="text" class="search-input" placeholder="what's your favorite?">
+                            </form>
+                        </div>
+                        <!-- 팝업 호버 -->
+                        <div class="search-popup">
+                            <div class="search-popup-content">
+                                <div class="search-popup-content-left float-left">
+                                    <div class="search-popup-title"> Popular </div>
+                                    <div class="popular-keyword">
+                                        <ul class="popular-keyword-list ul">
+                                            <li class="popular-keyword-item">
+                                                <a href="">우유 생크림 도넛</a>
+                                            </li>
+                                            <li class="popular-keyword-item">
+                                                <a href="">클래식 바닐라 도넛</a>
+                                            </li>
+                                            <li class="popular-keyword-item">
+                                                <a href="">얼그레이 도넛</a>
+                                            </li>
+                                            <li class="popular-keyword-item">
+                                                <a href="">민트 초코 도넛</a>
+                                            </li>
+                                            <li class="popular-keyword-item">
+                                                <a href="">라즈베리 도넛</a>
+                                            </li>
+                                            <li class="popular-keyword-item">
+                                                <a href="">스트로베리 도넛</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="search-popup-content-right float-right">
+                                    <div class="search-popup-title"> Recommended </div>
+                                    <div class="collection-box">
+                                        <ul class="collection-box-list">
+                                            <li class="collection-box-item">
+                                                <a href="#">
+                                                    <div class="collection-image">
+                                                        <img src="./image/버튼 호버_생크림 도넛.png" alt="image">
+                                                    </div>
+                                                    <div class="collection-name"></div>
+                                                </a>
+                                            </li>
+                                            <li class="collection-box-item">
+                                                <a href="#">
+                                                    <div class="collection-image">
+                                                        <img src="./image/버튼 호버_노세범.png" alt="image">
+                                                    </div>
+                                                    <div class="collection-name"></div>
+                                                </a>
+                                            </li>
+                                            <li class="collection-box-item">
+                                                <a href="#">
+                                                    <div class="collection-image ">
+                                                        <img src="./image/버튼 호버_노즈워크.png" alt="image">
+                                                    </div>
+                                                    <div class="collection-name"></div>
+                                                </a>
+                                            </li>
+                                            <li class="collection-box-item">
+                                                <a href="#">
+                                                    <div class="collection-image collection-top">
+                                                        <img src="./image/버튼 호버_손세정제.png" alt="image">
+                                                    </div>
+                                                    <div class="collection-name"></div>
+                                                </a>
+                                            </li>
+                                            <li class="collection-box-item">
+                                                <a href="#">
+                                                    <div class="collection-image collection-top">
+                                                        <img src="./image/버튼 호버_슈가베어.png" alt="image">
+                                                    </div>
+                                                    <div class="collection-name"></div>
+                                                </a>
+                                            </li>
+                                            <li class="collection-box-item">
+                                                <a href="#">
+                                                    <div class="collection-image collection-top">
+                                                        <img src="./image/버튼 호버_아이스크림.png" alt="image">
+                                                    </div>
+                                                    <div class="collection-name"></div>
+                                                </a>
+                                            </li>
+                                            <li class="collection-box-item">
+                                                <a href="#">
+                                                    <div class="collection-image">
+                                                        <img src="./image/버튼 호버_버즈(pink).png" alt="image">
+                                                    </div>
+                                                    <div class="collection-name"></div>
+                                                </a>
+                                            </li>
+                                            <li class="collection-box-item">
+                                                <a href="#">
+                                                    <div class="collection-image">
+                                                        <img src="./image/버튼 호버_버즈(blue).png" alt="image">
+                                                    </div>
+                                                    <div class="collection-name"></div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- header -->
+  <!--메인-->
+    <div class="container">
+        <!--로고-->
+        <!-- <div class="logo"><img src="/프로젝트 퍼스트/디자인/원지씨로고.png" alt="" class="logimg"></div> -->
+        <!--form-->
+        <div class="formct">
+            <iframe id='iframe' name="iframe" style="display: none;"></iframe>
+            <!--회원가입 멘트-->
+            <form action="" method="post" class="form" autocomplete="off" target="iframe">
+            <div class="welcomcon">
+                <h2 class="welcom">회원가입</h2>
+                <div class="welcomMent">회원이 되어 다양한 혜택을 경험해 보세요!</div>
+            </div>
+                <!--label-->
+                <div class="labcon">
+                    <label for="idTx" class="id">아이디
+                        <span class="idTxcon">
+                            <input type="text" id="idTx" class="idTx butxt" placeholder="아이디 입력(영어 + 숫자 6~20자)" autofocus>
+                            <input type="button" value="중복 확인" class="double">
+                        </span>
+                        <div class="idiv"></div>
+                    </label>
+
+                    <label for="passTx" class="password">비밀번호
+                        <input type="password" id="passTx" class="passTx butxt" placeholder="비밀번호 입력(문자, 숫자, 특수문자 포함 8~20자)">
+                        <div class="passiv"></div>
+                    </label>
+
+                    <label for="checkPassTx" class="checkpass">비밀번호 확인
+                        <input type="password" id="checkPassTx" class="checkPassTx butxt" placeholder="비밀번호를 다시 한 번 입력해주세요.">
+                        <div class="cpassiv"></div>
+                    </label>
+
+                    <label for="nameTx" class="name">이름
+                        <input type="text" id="nameTx" class="nameTx butxt" placeholder="이름을 입력해주세요.">
+                        <div class="nameiv"></div>
+                    </label>
+
+                    <label for="addTx" class="address">주소
+                        <span class="addTxcon">
+                            <input type="text" id="addTx" class="addTx butxt" placeholder="주소를 입력해주세요.">
+                            <input type="button" value="주소 검색" class="search">
+                        </span>
+                        <input type="text" class="readdTx butxt" placeholder="상세주소를 입력해주세요.">
+                        <div class="addiv"></div>
+                    </label>
+
+                    <label for="numTx" class="numTxcon">전화번호
+                        <input type="tel" id="numTx" class="numTx butxt" placeholder="휴대폰 번호 입력('-'제외 11자리 입력)">
+                        <div class="teliv"></div>
+                    </label>
+
+                    <label for="emailconcont" class="emailconcont">이메일 주소
+                        <span class="emailcont">
+                            <input type="text" id="email" class="email butxt" placeholder="이메일 주소를 적어주세요.">
+                            <span class="gorbang">@</span>
+                            <input type="text" class="emailcom">
+                            <select name="email" id="emailchoice" class="emailchoice">
+                                <option value="직접입력" class="choice">직접입력</option>
+                                <option value="naver.com" class="choice">naver.com</option>
+                                <option value="hanmail.net" class="choice">hanmail.net</option>
+                                <option value="google.com" class="choice">gmail.com</option>
+                                <option value="kakao.com" class="choice">kakao.com</option>
+                            </select>
+                        </span>
+                        <div class="emailiv"></div>
+                    </label>
+
+                    <label for="birth" class="birth">생년월일
+                        <span class="birthcon">
+                            <select name="birthY" class="birthY">
+                                <!--js로 for문 돌리기-->
+                                <option value="year" disabled selected>연도</option>
+                            </select>
+                            <select name="birthM" class="birthM">
+                                <!--js로 for문 돌리기-->
+                                <option value="month" disabled selected>월</option>
+                            </select>
+                            <select name="birthD" class="birthD">
+                                <!--js로 for문 돌리기-->
+                                <option value="day" disabled selected>일</option>
+                            </select>
+                        </span>
+                    </label>
+                </div> 
+
+                <label for="sign" class="sign">
+                    <input type="submit" value="가입완료" class="signOk">
+                    <input type="submit" value="가입취소" class="signNo">
+                </label>
+            </form>
+        </div>
+    </div>
+  <!-- footer -->
+        <footer class="footer section fp-auto-height">
+            <div class="container">
+                <!--footer-top -->
+                <div class="footer-top">
+                    <!--footer-top-menu -->
+                    <div class="footer-top-menu float-left">
+                        <ul>
+                            <li><a href="#">기업 및 단체구매안내</a></li>
+                            <li><a href="#">가맹상담신청</a></li>
+                            <li><a href="#">사이버신문고</a></li>
+                        </ul>
+                    </div>
+                    <!--footer-top-menu -->
+                    <!--footer-top-cs -->
+                    <div class="footer-top-cs float-right">
+                        <dl>
+                            <dt>
+                                Address
+                            </dt>
+                            <dd>
+                                서울특별시 강남구 도산대로 51길 16 (강남구 신사동 654-13), GFFG
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                Customer Center
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        고객센터 : 02-545-9377 │ 팩스 : 02-545-9377
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <!-- E : footer-top-cs -->
+                </div>
+                <!-- E : footer-top -->
+                <!-- S : footer-bottom -->
+                <div class="footer-bottom">
+                    <div class="float-left float-none">
+                        <!-- S : footer-bottom-menu -->
+                        <div class="footer-bottom-menu">
+                            <ul>
+                                <li><a href="#" class="footer-bottom-menu__link">이용약관</a></li>
+                                <li><a href="#" class="footer-bottom-menu__link"><strong>개인정보처리방침</strong></a></li>
+                                <li><a href="#" class="footer-bottom-menu__link">위치기반서비스
+                                        이용약관</a></li>
+                                <!-- <li><a href="#" class="footer-bottom-menu__link">사이트맵</a></li> -->
+                                <li><a href="#" class="footer-bottom-menu__link modal-button"
+                                        data-target="modal-popup1">이메일
+                                        무단수집거부</a></li>
+                                <li><a href="#" class="footer-bottom-menu__link modal-button"
+                                        data-target="modal-popup2">법적고지</a></li>
+                                <li><a href="#" target="_blank" class="footer-bottom-menu__link">사업자정보확인</a></li>
+                            </ul>
+                        </div>
+                        <!-- E : footer-bottom-menu -->
+                        <!-- S : footer-bottom-info -->
+                        <div class="footer-bottom-info">
+                            <ul class="footer-bottom-info__address">
+                                <li>
+                                    서울특별시 강남구 도산대로 51길 16 (강남구 신사동 654-13), GFFG
+                                </li>
+                                <li>
+                                    고객센터 : 1577-4410 <span class="span">|</span> 팩스 : 02-2058-6777
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    대표이사 : 이준범 |
+                                </li>
+                                <li>
+                                    개인정보보호책임자 : 박원지 |
+                                </li>
+                                <li>
+                                    사업자등록번호 : 404-86-01054 |
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    통신판매업종신고증 : 제 2018-서울중구-0353호 |
+                                </li>
+                                <li>
+                                    대표이메일 : helpmaster@Knotted.co.kr
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- E : footer-bottom-info -->
+                        <div class="footer-bottom-copy">
+                            <span>Copyright ⓒ 2021 A TWOSOME PLACE Co., LTD.</span>
+                            <span>All Rights Reserved.</span>
+                        </div>
+                    </div>
+
+                    <!-- S : footer-bottom-sns -->
+                    <div class="footer-bottom-sns float-right">
+                        <a href="https://www.facebook.com/cafeknotted.official" class="footer-bottom-sns__link icon"
+                            title="새창 열림">
+                            <span>페이스북</span>
+                        </a>
+                        <a href="https://www.instagram.com/cafeknotted/?hl=ko" class="footer-bottom-sns__link icon"
+                            title="새창 열림">
+                            <span>인스타그램</span>
+                        </a>
+                        <a href="https://pf.kakao.com/_AUDFj" class="footer-bottom-sns__link icon" title="새창 열림">
+                            <span>카카오톡</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- 고정영역 앵커
+        <div class="main-quick-container">
+            <a href="#section1" data-menuanchor="section1" class="button button-move-top is-active">
+                <i class="ico-arrow-up"></i>
+                <span class="sr-only">맨 위로 이동</span></a>
+        </div> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/Knotted.js"></script>
+    <script src="./js/text-color.js"></script>
+    <script src="js/index-sign_up.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="https://kit.fontawesome.com/7da9edd41b.js" crossorigin="anonymous"></script>
+</body>
+</html>

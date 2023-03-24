@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  background-color: #fdfaf2;
+  font-family: 'nanumsquare'
+}
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+@font-face {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.infor_container a {
+  text-decoration: none;
+}
+
+.formct p {
+  color: red;
+  margin-top: 5px;
+  text-indent: 15px;
+}
+
+.formct select {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+
+}
+
+.infor_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.formct > .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 730px;
+  height: 1350px;
+  border: 0px solid #ffda48;
+  border-radius: 10px;
+  color: #333;
+  text-indent: 10px;
+}
+
+.formct .labcon {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+
+.formct input {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.formct input::placeholder {
+  color: #bababa;
+}
+
+.formct .id {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    margin-bottom: 20px;
+}
+
+.formct .idTx {
+  width: 320px;
+  font-size: 17px;
+  border-radius: 10px;
+  text-indent: 15px;
+  padding: 20px;
+}
+
+.formct .idTxcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.formct .double {
+  width: 205px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f7d3cd;
+  color: white;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  padding-top: 10px;
+}
+
+.formct .password,
+.formct .checkpass,
+.formct .name,
+.formct .address,
+.formct .numTxcon {
+  display: flex;
+  flex-direction: column;
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.formct .password {
+  margin-bottom: 20px;
+}
+
+.formct .passTx {
+  text-indent: 15px;
+  
+}
+
+.formct .checkpass {
+  margin-bottom: 20px;
+}
+
+.formct .checkPassTx {
+  text-indent: 15px;
+  
+}
+
+.formct .name {
+  margin-bottom: 20px;
+}
+
+.formct .nameTx {
+  text-indent: 15px;
+  
+}
+
+.formct .address {
+  margin-bottom: 10px;
+}
+
+.formct .addTxcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.formct .readdTx {
+  text-indent: 15px;
+  
+  margin-top: 10px;
+}
+
+.formct .numTxcon {
+  margin: 10px 0;
+}
+
+.formct .numTx {
+  text-indent: 15px;
+  
+}
+
+.formct .emailcont,
+.formct .birthcon {
+  display: flex;
+  flex-direction: row;
+}
+
+.formct .emailcont {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.formct .emailconcont {
+  margin: 10px 0;
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.formct .email {
+  text-indent: 15px;
+  
+}
+
+.formct .gorbang {
+  text-indent: 0;
+}
+
+.formct .emailchoice {
+  text-indent: 15px;
+  background-color: #fff;
+}
+
+.formct .birth {
+  margin: 10px 0;
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.formct .birthcon {
+  justify-content: space-between;
+}
+
+.formct .passTx,
+.formct .checkPassTx,
+.formct .nameTx,
+.formct .numTx,
+.formct .email,
+.formct .readdTx {
+  width: 564px;
+  padding: 20px 20px 20px 20px;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.formct .addTx {
+  width: 305px;
+  padding: 20px;
+  font-size: 17px;
+  border-radius: 10px;
+  text-indent: 15px;
+}
+
+.formct .search {
+  width: 236px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f7d3cd;
+  color: white;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  padding-top: 10px;
+}
+
+.formct .email {
+  width: 232px;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.formct .emailchoice {
+  width: 145px;
+  padding: 20px 0;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #bababa;
+  line-height: 1.5;
+}
+
+.formct .emailcom {
+  width: 145px;
+  padding: 20px 0;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #bababa;
+  line-height: 1.5;
+  text-indent: 15px;
+}
+
+.formct .emailgray {
+  background-color: #f1f1f1;
+  width: 145px;
+  padding: 20px 0;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #bababa;
+  line-height: 1.5;
+  text-indent: 15px;
+}
+
+.formct .birthY,
+.formct .birthM,
+.formct .birthD {
+  width: 173px;
+  padding: 20px;
+  font-size: 17px;
+  border-radius: 10px;
+  color: #bababa;
+  text-indent: 15px;
+  background-color: #fff;
+}

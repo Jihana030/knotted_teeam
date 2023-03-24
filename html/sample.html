@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      ul {
+        list-style: none;
+      }
+
+      .d-none {
+        display: none;
+      }
+      .flex-row {
+        display: flex;
+      }
+      .flex-grow-1 {
+        flex-grow: 1;
+      }
+      .p-relative {
+        position: relative;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+      }
+      .sidebar {
+        background-color: antiquewhite;
+        padding: 20px;
+        width: 100px;
+      }
+
+      .sidebar ul li {
+        padding: 10px 0;
+        font-size: 2rem;
+      }
+      .sidebar ul li span {
+        cursor: pointer;
+      }
+
+      .content {
+        padding: 20px;
+      }
+      .content .p-relative > div {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container flex-row">
+      <div class="sidebar">
+        <ul>
+          <li>
+            <span data-view="A">A</span>
+          </li>
+          <li>
+            <span data-view="B">B</span>
+          </li>
+          <li>
+            <span data-view="C">C</span>
+          </li>
+        </ul>
+      </div>
+      <div class="content flex-grow-1">
+        <div class="p-relative">
+          <div class="" data-view="A">A입니다.</div>
+          <div class="d-none" data-view="B">B입니다.</div>
+          <div class="d-none" data-view="C">C입니다.</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        const $spanList = document.querySelectorAll('.sidebar span');
+        const $viewList = document.querySelectorAll('.p-relative > div');
+
+        $spanList.forEach((item) => {
+          item.addEventListener('click', (e) => {
+            $viewList.forEach((subItem) => {
+              subItem.classList.toggle('d-none', subItem.dataset.view !== e.target.dataset.view);
+            });
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

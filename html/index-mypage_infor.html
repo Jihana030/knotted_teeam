@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index-mypage_infor.css" />
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <title>mypage-infor</title>
+  </head>
+  <body>
+    <div class="infor_container">
+        <!--form-->
+        <div class="formct">
+            <!--label-->
+            <form action="" method="post" class="form" autocomplete="off" target="iframe">
+                <div class="labcon">
+                    <label for="idTx" class="id">아이디
+                        <span class="idTxcon">
+                            <input type="text" id="idTx" class="idTx butxt" placeholder="아이디 입력(영어 + 숫자 6~20자)" value='knotted22' autofocus>
+                            <input type="button" value="중복 확인" class="double">
+                        </span>
+                        <div class="idiv"></div>
+                        </label>
+
+                    <label for="passTx" class="password">비밀번호
+                        <input type="password" id="passTx" class="passTx butxt" placeholder="비밀번호 입력(문자, 숫자, 특수문자 포함 8~20자)">
+                        <div class="passiv"></div>
+                    </label>
+
+                    <label for="checkPassTx" class="checkpass">비밀번호 확인
+                        <input type="password" id="checkPassTx" class="checkPassTx butxt" placeholder="비밀번호를 다시 한 번 입력해주세요.">
+                        <div class="cpassiv"></div>
+                    </label>
+
+                    <label for="nameTx" class="name">이름
+                        <input type="text" id="nameTx" class="nameTx butxt" placeholder="이름을 입력해주세요." value='노티드'>
+                        <div class="nameiv"></div>
+                    </label>
+
+                    <label for="addTx" class="address">주소
+                        <span class="addTxcon">
+                            <input type="text" id="addTx" class="addTx butxt" placeholder="주소를 입력해주세요.">
+                            <input type="button" value="주소 검색" class="search">
+                        </span>
+                        <input type="text" class="readdTx butxt" placeholder="상세주소를 입력해주세요.">
+                        <div class="addiv"></div>
+                    </label>
+
+                    <label for="numTx" class="numTxcon">전화번호
+                        <input type="tel" id="numTx" class="numTx butxt" placeholder="휴대폰 번호 입력('-'제외 11자리 입력)" value='02-545-9377'>
+                        <div class="teliv"></div>
+                    </label>
+
+                    <label for="emailconcont" class="emailconcont">이메일 주소
+                        <span class="emailcont">
+                            <input type="text" id="email" class="email butxt" placeholder="이메일 주소를 적어주세요." value='knotted22'>
+                            <span class="gorbang">@</span>
+                            <input type="text" class="emailcom">
+                            <select name="email" id="emailchoice" class="emailchoice">
+                                <option value="직접입력" class="choice">직접입력</option>
+                                <option value="naver.com" class="choice" selected>naver.com</option>
+                                <option value="hanmail.net" class="choice">hanmail.net</option>
+                                <option value="google.com" class="choice">gmail.com</option>
+                                <option value="kakao.com" class="choice">kakao.com</option>
+                            </select>
+                        </span>
+                        <div class="emailiv"></div>
+                    </label>
+
+                    <label for="birth" class="birth">생년월일
+                        <span class="birthcon">
+                            <select name="birthY" class="birthY">
+                                <!--js로 for문 돌리기-->
+                                <option value="year" disabled selected>연도</option>
+                            </select>
+                            <select name="birthM" class="birthM">
+                                <!--js로 for문 돌리기-->
+                                <option value="month" disabled selected>월</option>
+                            </select>
+                            <select name="birthD" class="birthD">
+                                <!--js로 for문 돌리기-->
+                                <option value="day" disabled selected>일</option>
+                            </select>
+                        </span>
+                    </label>
+                </div> 
+            </form>
+        </div>
+    </div>
+    <script src="js/index-mypage_infor.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  </body>
+</html>

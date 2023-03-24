@@ -1,0 +1,2056 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  border-spacing: 0px;
+}
+
+#cursor {
+  position: absolute;
+  z-index: 9999999999999999;
+  transform: translate(10%, 10%);
+  background-image: url(../image/cursorFill3.svg);
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+@font-face {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: #f2a69a; /* 스크롤바의 색상 */
+
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f2a69a43; /*스크롤바 뒷 배경 색상*/
+}
+/*------------헤더----------------------------------------------------------------헤더*/
+#wrapper a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#wrapper li {
+    list-style-type: none;
+}
+
+#wrapper p {
+    font-family: 'NanumSquare', sans-serif;
+    line-height: 30px;
+}
+
+#wrapper .container {
+    display: flex;
+    position: relative;
+    margin-left: 75px;
+    padding: 0 200px;
+}
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean');
+
+@font-face {
+    font-family: 'SuseongDotum';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/SuseongDotum.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#wrapper {
+    position: relative;
+}
+
+#header {
+    background: transparent;
+    backdrop-filter: none;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+#header nav {
+  position: relative;
+}
+
+#header .logo {
+  position: absolute;
+    float: left;
+    width: 216px;
+    height: 93px;
+    /* margin: 20px 0 0 30px; */
+    top: 20px;
+    left: 30px;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+#header .logo a {
+    display: block;
+    height: 93px;
+    text-indent: -9999em;
+    background-image: url(../../jpg/image/제목_없음-2.png);
+    width: 80%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+}
+
+@media screen and (max-width:1024px) {
+    #header ul .none768 {
+        display: none;
+        transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+    }
+
+    #header .logo a {
+        transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+    }
+}
+
+@media screen and (max-width:768px) {
+    #header .logo a {
+        transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+    }
+}
+
+/* search css */
+
+#modal_btn {
+    float: right;
+}
+
+.modal_wrap {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(253, 250, 243, 0.9);
+    z-index: 2;
+}
+
+.modal_close {
+    float: right;
+}
+
+.modal_close img {
+    margin: 20px;
+    width: 25px;
+}
+
+/* search form */
+.search-form {
+    padding: 3px;
+    margin-top: 20px;
+    width: 600px;
+    height: 45px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: width 0.6s ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-bottom: 15px;
+    transform: translateX(-50%);
+    transition: all 0.6s ease;
+}
+
+@media screen and (max-width:768px) {
+    .search-form {
+        width: 420px;
+        transform: translateX(-64%);
+    }
+
+    .search-popup-content {
+        padding-top: 75px;
+    }
+
+    .search-popup-title {
+        margin-top: 50px;
+        margin-bottom: 24px;
+    }
+}
+
+.search-input {
+    font-size: 20px;
+    width: 100%;
+    height: 38px;
+    line-height: 32px;
+    border: none !important;
+    text-indent: 15px;
+    transition: all 0.6s ease;
+}
+
+input:focus {
+    outline: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+/* 팝업 호버 */
+
+.search-popup {
+    transition: all 0.6s ease;
+}
+
+.search-popup-content {
+    transition-delay: 0.4s;
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-left: 70px;
+    transition: all .5s;
+}
+
+.search-popup_-content-left {
+    min-width: 171px;
+    max-width: 200px;
+}
+
+.search-popup-content-right {
+    width: 367px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.search-popup-title {
+    font-size: 26px;
+    color: #acacac;
+    line-height: 17px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.popular-keyword {
+    padding-top: 11px;
+}
+
+.popular-keyword.list {
+    margin-bottom: 13px;
+    transition: 0.3s ease;
+}
+
+.popular-keyword-item {
+    margin-bottom: 13px;
+}
+
+.search-popup-content a {
+    font-size: 17px;
+    font-family: 'SuseongDotum';
+    font-weight: lighter;
+    color: black;
+}
+
+.search-popup-content a:hover {
+    color: #343434;
+    font-size: larger;
+}
+
+.collection-box-list a:hover {
+    transform: scale(1.4);
+}
+
+.collection-box-list li {
+    margin-top: 20px;
+    margin-right: 20px;
+    float: left;
+}
+
+.collection-box-list img {
+    width: 65px;
+}
+
+.collection-name {
+    font-size: 11px;
+}
+
+.collection-top {
+    margin-top: -10px;
+}
+
+#header nav > .category {
+    height: 100px;
+    background-color: #fefdfa;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    overflow: hidden;
+    z-index: -1;
+    /* backdrop-filter: blur(4px) saturate(80%); */
+}
+
+#header .category .menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+}
+
+#header .category .menu>li {
+    /* float: left; */
+    margin: 40px 10px;
+}
+
+
+#header .category .menu>li>a {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 700;
+    padding: 37px 0;
+    margin-top: 40px;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+/* button */
+.btn {
+    display: flex;
+    float: right;
+    margin: 45px 70px 10px 0;
+}
+
+#wrapper button {
+    font-family: inherit;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+}
+
+#header .btn-allmenu {
+    position: relative;
+    top: 41px;
+    width: 24px;
+    height: 24px;
+    background-image: url(./image/header_돋보기.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+@media screen and (max-width:1024px) {
+    .login {
+        display: none;
+    }
+
+    #header .btn-allmenu {
+        margin-top: -1px;
+        margin-right: -85px;
+        width: 24px;
+        height: 24px;
+        background-image: url(./image/header_햄버거.svg);
+
+
+    }
+}
+
+.btn:hover {
+    cursor: pointer;
+    transition: all .5s;
+    transform: translateY(-80%);
+    transition: all 0.9s, color 0.3;
+}
+
+/* header 로그인 */
+#header .login {
+    width: 70px;
+    font-size: 20px;
+    letter-spacing: -1.3px;
+    margin-top: -20px;
+    margin-left: -30px;
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+#header span:hover {
+    cursor: pointer;
+    transition: all .5s;
+    transform: translateY(-80%);
+    transition: all 0.9s, color 0.3;
+}
+/*----------------------기본css-------------------------------------기본 css*/
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #fdfaf2;
+}
+
+.container .profile > .gear {
+  display: none;
+  cursor: pointer;
+}
+
+.frm {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.container .listcont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #f2a69a;
+}
+
+.container .mypage {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  background-color: #fefdfa;
+  padding: 80px 0;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  font-size: 30px;
+  width: 282px;
+  cursor: pointer;
+}
+
+.container .mylist > li {
+  cursor: pointer;
+  font-weight: bold;
+  display: grid;
+  font-family: 'NanumSquare';
+  grid-template-columns: 0.3fr 0.5fr;
+  align-items: flex-end;
+  width: 230px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.container .mylist > .list{
+  color: #333;
+}
+
+.container .mylist > li > p {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  padding-top: 5px;
+}
+
+.container .mylist > li > .reimg {
+  width: 35px;
+  padding-bottom: 2px;
+}
+
+.container .infor:hover {
+  color: rgb(255, 255, 255);
+  justify-items: end;
+  grid-template-columns: 1fr 0.4fr;
+  padding-right: 10px;
+  background: linear-gradient(270deg, #f2a69a, #fcc9c1, #fdfaf2);
+  transition: all 0.5s linear;
+}
+.container .infor:hover .img {
+  color: white;
+  justify-items: end;
+  transition: all 0.2s linear;
+}
+
+.container .heart:hover {
+  background: linear-gradient(270deg, #f2a69a, #fcc9c1, #fdfaf2);
+  transition: all 0.5s linear;
+  color: white;
+  justify-items: end;
+  grid-template-columns: 1fr 0.3fr;
+  padding-right: 10px;
+}
+.container .heart:hover .img {
+  color: white;
+  justify-items: end;
+  transition: all 0.2s linear;
+}
+
+.container .salelist:hover {
+  background: linear-gradient(270deg, #f2a69a, #fcc9c1, #fdfaf2);
+  transition: all 0.5s linear;
+  color: white;
+  justify-items: end;
+  grid-template-columns: 1fr 0.4fr;
+  padding-right: 10px;
+}
+.container .salelist:hover .img {
+  color: white;
+  justify-items: end;
+  transition: all 0.2s linear;
+}
+
+.container .orderlist:hover {
+  background: linear-gradient(270deg, #f2a69a, #fcc9c1, #fdfaf2);
+  transition: all 0.5s linear;
+  color: white;
+  justify-items: end;
+  grid-template-columns: 1fr 0.7fr;
+  padding-right: 10px;
+}
+.container .orderlist:hover .img {
+  color: white;
+  justify-items: end;
+  transition: all 0.2s linear;
+}
+
+.container .review:hover {
+  background: linear-gradient(270deg, #f2a69a, #fcc9c1, #fdfaf2);
+  transition: all 0.5s linear;
+  color: white;
+  justify-items: end;
+  grid-template-columns: 1fr 0.6fr;
+  padding-right: 10px;
+}
+.container .review:hover .img {
+  color: white;
+  justify-items: end;
+  transition: all 0.2s linear;
+}
+
+.container .salecupon:hover {
+  background: linear-gradient(270deg, #f2a69a, #fcc9c1, #fdfaf2);
+  transition: all 0.5s linear;
+  color: white;
+  justify-items: end;
+  grid-template-columns: 1fr 0.4fr;
+  padding-right: 10px;
+}
+
+.container .salecupon:hover .img {
+  display: block;
+  color: white;
+  justify-items: end;
+  width: 25px;
+  transition: all 0.2s linear;
+}
+
+.container .service:hover {
+  background: linear-gradient(270deg, #f2a69a, #fcc9c1, #fdfaf2);
+  transition: all 0.5s linear;
+  color: white;
+  justify-items: end;
+  grid-template-columns: 1fr 0.4fr;
+  padding-right: 10px;
+}
+.container .service:hover .img {
+  color: white;
+  justify-items: end;
+  transition: all 0.2s linear;
+}
+
+.container .img {
+  justify-self: end;
+  color: #f2a69a;
+  width: 25px;
+  margin-right: 10px;
+}
+
+.container .profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 35px 48px 35px;
+  background-color: #fefdfa;
+  width: calc(100% - 69px);
+}
+
+.container .donutimg {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.container .donut {
+  height: 100px;
+  position: absolute;
+  background-size: cover;
+  top: 0;
+}
+
+.container .fafa {
+  right: -10px;
+}
+
+.container .donutname {
+  padding-left: 10px;
+}
+
+.container .welcom {
+  width: 70vw;
+}
+
+.container .welcoment {
+  display: flex;
+  flex-direction: row;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  font-size: 25px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.container .ment {
+  padding-top: 15px;
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.container .myadj {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  background-color: #f7d3cd;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 25px 50px 15px;
+  color: #fff;
+  cursor: pointer;
+}
+.container .myadj:hover {
+  background-color: #ffbdb1;
+  background: linear-gradient(270deg, #ffbdb1);
+  transition: all 0.4s linear;
+}
+
+.container .smile {
+  width: 80px;
+  height: 80px;
+}
+
+.container .truck {
+  padding: 0 10px;
+  width: 50px;
+}
+
+.container .orlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .ordertitle {
+  display: flex;
+  align-items: flex-end;
+  background-color: #fff7c1;
+  padding: 25px 10px;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  color: #f2a69a;
+  font-size: 25px;
+}
+.container .ordertitle2 {
+  display: flex;
+  align-items: flex-end;
+  background-color: #fff7c1;
+  padding: 25px 10px;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  color: #f2a69a;
+  font-size: 25px;
+}
+
+.container .ordtd,
+.container .reviewtd {
+  font-family: 'nanumsquare';
+  width: 70vw;
+  background-color: #fefdfa;
+  border: none;
+  border-spacing: 0px;
+}
+.container .ordtd2,
+.container .reviewtd2 {
+  font-family: 'nanumsquare';
+  width: 70vw;
+  background-color: #fefdfa;
+  border-spacing: 0px;
+}
+
+.container .ordtd > td {
+  font-size: 15px;
+}
+.container .reviewtd > td {
+  font-size: 15px;
+}
+.container .ordtd2 > td {
+  font-size: 15px;
+}
+.container .reviewtd2 > td {
+  font-size: 15px;
+}
+
+.container .donut,
+.container .donutname,
+.container .pay,
+.container .day,
+.container .state {
+  margin-right: 10px;
+}
+
+.container .reviewtitle {
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffe8e4;
+  padding: 25px 20px;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  color: #f2a69a;
+  font-size: 25px;
+}
+.container .reviewtitle2 {
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffe8e4;
+  padding: 25px 20px;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  color: #f2a69a;
+  font-size: 25px;
+}
+
+.container .fa-solid,
+.container .fa-regular {
+  padding: 0;
+  margin: 0;
+}
+
+.container .sale {
+  display: none;
+}
+
+.container .reviwetxt {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  margin-top: 10px;
+}
+
+.container .reviewpage {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  background-color: #f7d3cd;
+  font-size: 17px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 30px 40px 20px;
+}
+.container .reviewpage:hover {
+  background-color: #ffbdb1;
+  background: linear-gradient(270deg, #ffbdb1);
+  transition: all 0.4s linear;
+}
+
+.container .day,
+.container .pay,
+.container .state {
+  text-align: center;
+  font-size: 13px;
+}
+
+.container .event {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .event > p {
+  padding: 50px 30px 0px 60px;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  font-size: 25px;
+}
+
+.container .shinhan,
+.container .buds,
+.container .socar {
+  width: 90%;
+  cursor: pointer;
+}
+
+.container .eventimg {
+  padding: 20px 0;
+  width: 688px;
+  justify-self: center;
+  align-self: center;
+}
+
+/*------------------------------------------------------------고객센터css*/
+.container .con_serv {
+  flex-basis: inherit;
+}
+
+.container .servhelp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .rainbow {
+  width: calc(100%);
+}
+
+.container .helptxt {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  font-size: 20px;
+  position: absolute;
+}
+
+.container .Asked,
+.container .ftfinq {
+  display: block;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  font-size: 20px;
+  background-color: #fefdfa;
+  height: 50px;
+  padding: 40px 5px 5px 30px;
+}
+
+.container .ulasked {
+  font-family: 'nanumsquare';
+  line-height: 35px;
+}
+
+.container .liasked {
+  border-bottom: 1px solid #333;
+  text-indent: 20px;
+}
+
+.container .showtitle {
+  transition: ease-in-out 0.2s all;
+  cursor: pointer;
+}
+
+.container .showtitle:hover {
+  padding-left: 25px;
+}
+
+.container .showtitle::before,
+.container .showtitle::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  border-radius: 50px;
+  transition: ease-in-out 0.6s all;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .showtitle::before {
+  width: 100%;
+}
+
+.container .showtitle::after {
+  width: 0%;
+}
+
+.container .showtitle:hover::after {
+  width: 100%;
+}
+
+.container .showask {
+  background-color: #fefdfa;
+  font-size: 12px;
+  border-top: 1px solid #ffda48;
+  padding: 0 50px;
+  text-indent: 0;
+
+  animation: pullDown 300ms ease-in-out forwards;
+}
+@keyframes pullDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container .slideUp {
+  height: 0px;
+  animation: slideUp 300ms ease-in-out forwards;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 1;
+    transform: translateY(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+/* 
+.ulasked .liasked .showask {
+  opacity: 0;
+   height: 0;
+   padding: 0px 20px;
+   position: relative;
+   line-height: 24px;
+   font-size: 16px;
+   font-weight: 200;
+   transition: all 0.6s cubic-bezier(.42,.2,.08,1);
+   overflow: hidden;
+   background-color: #f0f5f9;
+   letter-spacing: 0.5px;
+}
+
+.ulasked .liasked .showask .show{
+  background-color: #fefdfa;
+  font-size: 12px;
+  border-top: 1px solid #ffda48;
+  padding: 0 50px;
+  text-indent: 0;
+  opacity: 1;
+   height: auto;
+   padding: 25px 20px;
+   position: relative;
+   z-index: 0;
+   border-radius: 0px 0px 3px 3px;
+} */
+
+.container .Noshow {
+  display: none;
+}
+
+.container .servecon {
+  position: relative;
+  width: calc(100%);
+  height: 331px;
+  overflow: hidden;
+}
+
+.container .flower {
+  position: absolute;
+  left: calc(-10%);
+}
+
+.container .servecon > .servtime {
+  position: absolute;
+  right: calc(30%);
+  top: calc(30%);
+  font-size: 20px;
+}
+
+.container .servecon > .servtime1 {
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+/*------------------------------------------------------------------회원정보css */
+.container .infor_container a {
+  text-decoration: none;
+}
+
+.container .infor_container {
+  padding-top: 30px;
+}
+
+.container .formct {
+  font-family: 'nanumsquare';
+}
+
+.container .formct p {
+  color: red;
+  margin-top: 5px;
+  text-indent: 15px;
+}
+
+.container .formct select {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+}
+
+.container .infor_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+
+.container .formct > .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 730px;
+  height: 1350px;
+  border: 0px solid #ffda48;
+  border-radius: 10px;
+  color: #333;
+  text-indent: 10px;
+}
+
+.container .formct .labcon {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+
+.container .formct input {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.container .formct input::placeholder {
+  color: #bababa;
+}
+
+.container .formct .id {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  margin-bottom: 20px;
+}
+
+.container .formct .idTx {
+  font-family: 'nanumsquare';
+  width: 320px;
+  font-size: 17px;
+  border-radius: 10px;
+  text-indent: 15px;
+  padding: 20px;
+  margin-right: 30px;
+}
+
+.container .formct .idTxcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.container .formct .double {
+  width: 205px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f7d3cd;
+  color: white;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  padding-top: 10px;
+}
+.container .formct .double:hover {
+  background-color: #ffbdb1;
+  background: linear-gradient(270deg, #ffbdb1);
+  transition: all 0.4s linear;
+}
+
+.formct .password,
+.formct .checkpass,
+.formct .name,
+.formct .address,
+.formct .numTxcon {
+  display: flex;
+  flex-direction: column;
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.formct .password {
+  margin-bottom: 20px;
+}
+
+.formct .passTx {
+  text-indent: 15px;
+}
+
+.formct .checkpass {
+  margin-bottom: 20px;
+}
+
+.formct .checkPassTx {
+  text-indent: 15px;
+}
+
+.formct .name {
+  margin-bottom: 20px;
+}
+
+.formct .nameTx {
+  text-indent: 15px;
+}
+
+.formct .address {
+  margin-bottom: 10px;
+}
+
+.formct .addTxcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.formct .readdTx {
+  text-indent: 15px;
+
+  margin-top: 10px;
+}
+
+.formct .numTxcon {
+  margin: 10px 0;
+}
+
+.formct .numTx {
+  text-indent: 15px;
+}
+
+.formct .emailcont,
+.formct .birthcon {
+  display: flex;
+  flex-direction: row;
+}
+
+.formct .emailcont {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.formct .emailconcont {
+  margin: 10px 0;
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.formct .email {
+  text-indent: 15px;
+}
+
+.formct .gorbang {
+  text-indent: 0;
+  margin-right: 5px;
+}
+
+.formct .emailchoice {
+  text-indent: 15px;
+  background-color: #fff;
+}
+
+.formct .birth {
+  margin: 10px 0;
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.formct .birthcon {
+  justify-content: flex-start;
+}
+
+.formct .passTx,
+.formct .checkPassTx,
+.formct .nameTx,
+.formct .numTx,
+.formct .email,
+.formct .readdTx {
+  width: 564px;
+  padding: 20px 20px 20px 20px;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.formct .addTx {
+  width: 305px;
+  padding: 20px;
+  font-size: 17px;
+  border-radius: 10px;
+  text-indent: 15px;
+  margin-right: 15px;
+}
+
+.formct .search {
+  width: 236px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f7d3cd;
+  color: white;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  padding-top: 10px;
+}
+.formct .search:hover {
+  background-color: #ffbdb1;
+  background: linear-gradient(270deg, #ffbdb1);
+  transition: all 0.4s linear;
+}
+
+.formct .email {
+  width: 232px;
+  font-size: 17px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.formct .emailchoice {
+  width: 145px;
+  padding: 20px 0;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #bababa;
+  line-height: 1.5;
+}
+
+.formct .emailcom {
+  width: 145px;
+  padding: 20px 0;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #bababa;
+  line-height: 1.5;
+  text-indent: 15px;
+  margin-right: 10px;
+}
+
+.formct .emailgray {
+  background-color: #f1f1f1;
+  width: 145px;
+  padding: 20px 0;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #bababa;
+  line-height: 1.5;
+  text-indent: 15px;
+}
+
+.formct .birthY,
+.formct .birthM,
+.formct .birthD {
+  width: 173px;
+  margin-right: 40px;
+  padding: 20px;
+  font-size: 17px;
+  border-radius: 10px;
+  color: #bababa;
+  text-indent: 15px;
+  background-color: #fff;
+}
+
+.container .formct .sign {
+  margin: 10px 20px;
+  align-self: center;
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.container .formct .signOk,
+.container .formct .signNo {
+  width: 130px;
+  height: 48px;
+  margin: 30px;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  padding-top: 10px;
+}
+
+.container .formct .signOk {
+  background-color: #f7d3cd;
+}
+.container .formct .signOk:hover {
+  background-color: #ffbdb1;
+  background: linear-gradient(270deg, #ffbdb1);
+  transition: all 0.4s linear;
+}
+
+.container .formct .signNo {
+  background-color: #feea6d;
+}
+.container .formct .signNo:hover {
+  background-color: #ffd23e;
+  background: linear-gradient(270deg, #ffd23e);
+  transition: all 0.4s linear;
+}
+/*--------------------------------------------------------카테고리 페이지 이동없이*/
+.container .inforcon {
+  display: none;
+}
+.container .summary {
+  position: relative;
+}
+
+.container .orlist {
+  top: 0;
+  left: 0;
+  width: inherit;
+}
+/*-------------푸터-------------------------------------------------------------푸터*/
+/* footer */
+.main-section-footer #footer {
+    margin-top: 10px;
+}
+
+.footer {
+    padding: 48px 0;
+    background-color: rgb(215, 230, 223);
+    color: black;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+.footer-top-cs dl dt {
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+.footer-top-cs dl dd {
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.footer ul {
+  list-style-position: inside;
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.footer li {
+  list-style: none;
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.footer a {
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.footer strong {
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.footer span {
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+
+.footer .section .container {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+.footer .container {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 48px;
+    max-width: 1500px;
+}
+
+.footer-bottom {
+    margin-top: 48px;
+    padding-top: 48px;
+    border-top: 1px solid black;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.footer ul {
+    list-style-position: inside;
+}
+
+#footer li {
+    list-style: none;
+}
+
+.footer-top-menu li:first-child {
+    margin-top: 0;
+}
+
+.footer-top-menu a {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-top-menu li {
+    display: block;
+    margin-top: 16px;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-top-cs dl:first-child {
+    margin-top: 0;
+}
+
+.footer-top-cs dl {
+    display: block;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-top-cs dl {
+    display: block;
+    margin-top: 34px;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+@media screen and (max-width:1024px) {
+    .footer-top-cs {
+        display: none;
+    }
+
+    .float-left {
+        line-height: 17px;
+        transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+    }
+
+    .footer-bottom-menu {
+        display: flex;
+        margin-top: -3vh;
+        font-size: 24px;
+        font-weight: 600;
+        color: black;
+        transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+    }
+}
+
+.footer-top::after {
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+*::after {
+    box-sizing: inherit;
+}
+
+.float-none {
+    float: none !important;
+}
+
+.footer-bottom {
+    margin-top: 48px;
+    padding-top: 48px;
+    border-top: 1px solid #000;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-bottom-info li {
+    display: inline-block;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.footer-bottom-menu {
+    margin-bottom: 20px;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-bottom-menu li {
+    display: inline-block;
+    margin-right: 40px;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-bottom-menu a {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.footer-bottom-info {
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-bottom-info {
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-bottom-info ul {
+    margin-bottom: 8px;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-bottom-copy {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    font-family: "Mark Pro";
+    font-size: 12px;
+    font-weight: 400;
+    color: #777;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-bottom-copy span {
+    display: inline-block;
+    margin-right: 4px;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+
+.footer-bottom-sns__link:first-child {
+    margin-left: 0;
+}
+
+.footer-bottom-sns__link {
+    display: inline-block;
+    margin-left: 14px;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-bottom-sns__link {
+    display: inline-block;
+    margin-left: 14px;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+/*--------------------------------------------------------------------미디어쿼리*/
+@media (max-width: 1120px) {
+  
+  .btn-allmenu {
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  #header .headerChild {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.45fr;
+  }
+
+  #header .category .menu > li {
+    display: none;
+  }
+
+  #header .logo {
+    margin: 15px 0 0 85px;
+  }
+
+  #header .btn-allmenu {
+    float: right;
+    width: 24px;
+    height: 24px;
+    margin: 38px 64px 0 0;
+    text-indent: -9999em;
+    background: url(../image/ico_24_allmenu_black\ berger.svg) no-repeat 0 0;
+    overflow: hidden;
+  }
+
+  .container .btn-allmenu {
+    display: block;
+  }
+
+  .container .profile {
+    width: calc(100% - 68px);
+  }
+
+  .container .listcont {
+    display: none;
+  }
+
+  .frm {
+    justify-content: center;
+  }
+
+  .container .welcom {
+    width: 80vw;
+  }
+
+  .container .reviewtd,
+  .container .ordtd {
+    width: 80vw;
+  }
+
+  .container .ordtd2,
+  .container .reviewtd2 {
+    width: 80vw;
+  }
+
+  .container .reviewpage {
+    padding: 25px 2px 15px;
+    width: 13vw;
+  }
+
+  .container .mylist {
+    background-color: #fefdfa;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-wrap: wrap;
+    height: 300px;
+  }
+  .container .mylist > li {
+    background-color: #fefdfa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 165px;
+    height: 60px;
+  }
+  .container .mylist > li > .img {
+    padding-bottom: 3px;
+    margin: 0;
+  }
+  .container .frm {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .container .listcont {
+    display: block;
+    width: 80vw;
+  }
+  .container .mypage {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 768px) {
+  /* .profile {
+    padding: 48px 35px;
+  } */
+  .container .profile > .fa-gear {
+    display: block;
+
+    width: 60px;
+    font-size: 35px;
+  }
+
+  .container .ordNo,
+  .container .reviewNo {
+    display: none;
+  }
+  .container .ordNo2 {
+    display: none;
+  }
+
+  .container .reviewNo2 {
+    display: none;
+  }
+  .container .myadj {
+    display: none;
+  }
+  .frm {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .container .orlist {
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    position: relative;
+  }
+
+  .container .orderview,
+  .container .reviewlist {
+    display: block;
+  }
+
+  .container .ordertitle,
+  .container .reviewtitle {
+    cursor: pointer;
+  }
+  .container .ordertitle2,
+  .container .reviewtitle2 {
+    cursor: pointer;
+  }
+
+  .container .orderwidth,
+  .container .reviewidth {
+    width: 77vw;
+  }
+  .container .orderwidth2,
+  .container .reviewidth2 {
+    width: 77vw;
+  }
+
+  .container .ordwidth,
+  .container .rewidth {
+    width: 37vw;
+  }
+  .container .ordwidth2,
+  .container .rewidth2 {
+    width: 37vw;
+  }
+
+  .container .reviewtitle,
+  .container .ordertitle {
+    padding: 20px 10px;
+  }
+  .container .reviewtitle2,
+  .container .ordertitle2 {
+    padding: 20px 10px;
+  }
+
+  .container .listcont {
+    display: block;
+    width: 80vw;
+  }
+  .container .mypage {
+    display: none;
+  }
+
+  .container .mylist {
+    background-color: #fefdfa;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 300px;
+  }
+  .container .mylist > li {
+    background-color: #fefdfa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 165px;
+    height: 60px;
+  }
+  .container .mylist > li > .img {
+    padding-bottom: 3px;
+    margin: 0;
+  }
+
+  .container .fa-solid,
+  .container .fa-regular {
+    padding-left: 10px;
+    margin: 0;
+  }
+
+  .container .list:hover {
+    padding-left: 10px;
+    width: 145px;
+  }
+
+  .container .event {
+    padding-top: 0px;
+  }
+
+  .container .eventimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+  }
+
+  .container .reviewtitle {
+    justify-content: center;
+  }
+
+  .container .flower {
+    left: calc(-50%);
+  }
+
+  .container .infor_container a {
+    text-decoration: none;
+  }
+
+  .container .infor_container {
+    padding-top: 30px;
+  }
+
+  .container .formct p {
+    color: red;
+    margin-top: 5px;
+    text-indent: 15px;
+  }
+
+  .container .formct select {
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+  }
+
+  .container .infor_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
+  }
+
+  .container .formct > .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 730px;
+    height: 1350px;
+    border: 0px solid #ffda48;
+    border-radius: 10px;
+    color: #333;
+    text-indent: 10px;
+  }
+
+  .container .formct .labcon {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+  }
+
+  .container .formct input {
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  .container .formct input::placeholder {
+    color: #bababa;
+  }
+
+  .container .formct .id {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    margin-bottom: 20px;
+  }
+
+  .container .formct .idTx {
+    width: 40vw;
+    font-size: 14px;
+    border-radius: 10px;
+    text-indent: 5px;
+    padding: 20px;
+    margin-right: 30px;
+  }
+
+  .container .formct .idTxcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .container .formct .double {
+    width: 20vw;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f7d3cd;
+    color: white;
+    font-family: 'GangwonEduPowerExtraBoldA';
+  }
+
+  .container .formct .password,
+  .container .formct .checkpass,
+  .container .formct .name,
+  .container .formct .address,
+  .container .formct .numTxcon {
+    display: flex;
+    flex-direction: column;
+    font-family: 'GangwonEduPowerExtraBoldA';
+  }
+
+  .container .formct .password {
+    margin-bottom: 20px;
+  }
+
+  .container .formct .passTx {
+    text-indent: 15px;
+  }
+
+  .container .formct .checkpass {
+    margin-bottom: 20px;
+  }
+
+  .container .formct .checkPassTx {
+    text-indent: 10px;
+  }
+
+  .container .formct .name {
+    margin-bottom: 20px;
+  }
+
+  .container .formct .nameTx {
+    text-indent: 10px;
+  }
+
+  .container .formct .address {
+    margin-bottom: 10px;
+  }
+
+  .container .formct .addTxcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .container .formct .readdTx {
+    text-indent: 10px;
+
+    margin-top: 10px;
+  }
+
+  .container .formct .numTxcon {
+    margin: 10px 0;
+  }
+
+  .container .formct .numTx {
+    text-indent: 10px;
+  }
+
+  .container .formct .emailcont,
+  .container .formct .birthcon {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container .formct .emailcont {
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .container .formct .emailconcont {
+    margin: 10px 0;
+    font-family: 'GangwonEduPowerExtraBoldA';
+  }
+
+  .container .formct .gorbang {
+    text-indent: 0;
+    margin-right: 5px;
+  }
+
+  .container .formct .emailchoice {
+    text-indent: 10px;
+    background-color: #fff;
+  }
+
+  .container .formct .birth {
+    margin: 10px 0;
+    font-family: 'GangwonEduPowerExtraBoldA';
+  }
+
+  .container .formct .birthcon {
+    justify-content: flex-start;
+  }
+
+  .container .formct .passTx,
+  .container .formct .checkPassTx,
+  .container .formct .nameTx,
+  .container .formct .numTx,
+  .container .formct .email,
+  .container .formct .readdTx {
+    width: 66vw;
+    padding: 20px 20px 20px 20px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .container .formct .addTx {
+    width: 40vw;
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 10px;
+    text-indent: 5px;
+    margin-right: 15px;
+  }
+
+  .container .formct .search {
+    width: 20vw;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f7d3cd;
+    color: white;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    padding-top: 10px;
+  }
+
+  .container .formct .email {
+    width: 20vw;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-right: 5px;
+    text-indent: 5px;
+  }
+
+  .container .formct .emailchoice {
+    width: 18vw;
+    padding: 20px 0;
+    font-size: 15px;
+    border-radius: 10px;
+    color: #bababa;
+    line-height: 1.5;
+  }
+
+  .container .formct .emailcom {
+    width: 20vw;
+    padding: 20px 0;
+    font-size: 15px;
+    border-radius: 10px;
+    color: #bababa;
+    line-height: 1.5;
+    text-indent: 15px;
+    margin-right: 10px;
+  }
+
+  .container .formct .emailgray {
+    background-color: #f1f1f1;
+    width: 20vw;
+    padding: 18px 0;
+    font-size: 15px;
+    border-radius: 10px;
+    color: #bababa;
+    line-height: 1.5;
+    text-indent: 10px;
+    margin-right: 10px;
+  }
+
+  .container .formct .birthY,
+  .container .formct .birthM,
+  .container .formct .birthD {
+    width: 23vw;
+    margin-right: 10px;
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 10px;
+    color: #bababa;
+    text-indent: 10px;
+    background-color: #fff;
+  }
+}

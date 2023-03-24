@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: 'GangwonEduPowerExtraBoldA';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      .idTx {
+        width: 320px;
+        font-size: 17px;
+        border-radius: 10px;
+        text-indent: 15px;
+        line-height: 1.4;
+      }
+      #numTx {
+        font-family: 'GangwonEduPowerExtraBoldA';
+      }
+
+      /* 고객센터 애니메이션 */
+      /* animation-name: pullDown;
+  -webkit-animation-name: pullDown;
+
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+
+  transform-origin: 100% 0%;
+  -ms-transform-origin: 100% 0%;
+  -webkit-transform-origin: 100% 0%; */
+
+  /* 헤더 */
+  /* #wrapper {
+  position: relative;
+}
+
+#header {
+  background: transparent;
+  backdrop-filter: none;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+#header .headerChild {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+}
+#header li {
+  list-style-type: none;
+}
+
+#header a {
+  color: inherit;
+  text-decoration: inherit;
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+@font-face {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#header .logo {
+  float: left;
+  width: 216px;
+  height: 93px;
+  margin: 15px 0 0 30px;
+  transition: all 0.3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+#header .logo a {
+  display: block;
+  width: 216px;
+  height: 93px;
+  text-indent: -9999em;
+  background-image: url(../image/KakaoTalk_20221206_145000159.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+}
+
+#header .category {
+  height: 100px;
+  background: transparent;
+  transition: all 0.3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+  width: calc(95%);
+  top: 0;
+  left: 250px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#header .category .menu {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+#header .category .menu > li {
+  float: left;
+  margin: 40px 50px;
+}
+
+#header .category .menu > li > a {
+  font-size: 18px;
+  color: black;
+  line-height: 27px;
+  font-weight: 700;
+  padding: 37px 0;
+  margin-top: 40px;
+  transition: all 0.3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+#header button {
+  font-family: inherit;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+}
+
+#header .btn-allmenu {
+  float: right;
+  width: 24px;
+  height: 24px;
+  margin: 38px 64px 0 0;
+  text-indent: -9999em;
+  background: url(../image/ico_24_allmenu_black\ \(2\).svg) no-repeat 0 0;
+  overflow: hidden;
+} */
+
+#wrapper {
+  width: 100%;
+  /* height: 120px;
+  padding-top: 30px; */
+  background: transparent;
+  background-color: #fdfaf2;
+}
+#header {
+  display: flex;
+}
+#header nav {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .menu {
+  display: flex;
+  margin-right: 50px;
+}
+.menu > li {
+  margin: 0 25px;
+  font-size: 18px;
+  
+}
+#header .logo {
+  background-image: url(../image/KakaoTalk_20221206_145000159.png);
+  width: 196.94px;
+  height: 80px;
+  /* margin-left: 60px; */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  cursor: pointer;
+  margin-left: 70px;
+}
+.menu a {
+  color: inherit;
+  text-decoration: inherit;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  padding: 5px;
+}
+.btn-allmenu {
+  display: none;
+  width: 24px;
+  height: 24px;
+  margin: 20px 100px;
+  border: none;
+  /* margin-right: 90px; */
+  /* margin: 38px 64px 0 0; */
+  /* text-indent: -9999em; */
+  background: url(../image/ico_24_allmenu_black\ berger.svg) no-repeat;
+  /* overflow: hidden; */
+} 
+
+/*메인css------------------------------------------------메인css-------------------------------------------*/
+a {
+  text-decoration: none;
+}
+
+p {
+  color: red;
+  margin-top: 5px;
+  text-indent: 15px;
+}
+.id > .idiv {
+  color: red;
+  margin-top: 5px;
+  text-indent: 15px;
+}
+
+select {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 60px auto;
+}
+
+.logimg {
+  width: 354px;
+  height: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  /* padding-top: 120px; */
+  width: 730px;
+  height: 1350px;
+  border: 0px solid #ffda48;
+  border-radius: 10px;
+  color: #333;
+  text-indent: 10px;
+}
+
+.welcomcon {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    padding: 10px 50px;
+    margin: 40px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.welcom {
+  padding-bottom: 10px;
+  font-size: 36px;
+}
+
+.welcomMent {
+  font-size: 17px;
+}
+
+.labcon {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+
+input {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+input::placeholder {
+  color: #bababa;
+}
+
+.id {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    margin-bottom: 20px;
+}
+
+.idTx {
+  width: 320px;
+  font-size: 17px;
+  border-radius: 10px;
+  text-indent: 15px;
+  padding: 20px;
+}
+
+.idTxcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.double {
+  width: 205px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f7d3cd;
+  color: white;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  padding-top: 10px;
+}
+.double:hover {
+  background-color: #ffbdb1;
+  background: linear-gradient(270deg, #ffbdb1);
+  transition: all 0.4s linear;
+}
+
+.password,
+.checkpass,
+.name,
+.address,
+.numTxcon {
+  display: flex;
+  flex-direction: column;
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.password {
+  margin-bottom: 20px;
+}
+
+.passTx {
+  text-indent: 15px;
+  
+}
+
+.checkpass {
+  margin-bottom: 20px;
+}
+
+.checkPassTx {
+  text-indent: 15px;
+  
+}
+
+.name {
+  margin-bottom: 20px;
+}
+
+.nameTx {
+  text-indent: 15px;
+  
+}
+
+.address {
+  margin-bottom: 10px;
+}
+
+.addTxcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.readdTx {
+  text-indent: 15px;
+  
+  margin-top: 10px;
+}
+
+.numTxcon {
+  margin: 10px 0;
+}
+
+.numTx {
+  text-indent: 15px;
+  
+}
+
+.emailcont,
+.birthcon {
+  display: flex;
+  flex-direction: row;
+}
+
+.emailcont {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.emailconcont {
+  margin: 10px 0;
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.email {
+  text-indent: 15px;
+  
+}
+
+.gorbang {
+  text-indent: 0;
+}
+
+.emailchoice {
+  text-indent: 15px;
+  background-color: #fff;
+}
+
+.birth {
+  margin: 10px 0;
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.birthcon {
+  justify-content: space-between;
+}
+
+.passTx,
+.checkPassTx,
+.nameTx,
+.numTx,
+.email,
+.readdTx {
+  width: 564px;
+  padding: 20px 20px 20px 20px;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.addTx {
+  width: 305px;
+  padding: 20px;
+  font-size: 17px;
+  border-radius: 10px;
+  text-indent: 15px;
+}
+
+.search {
+  width: 236px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f7d3cd;
+  color: white;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  padding-top: 10px;
+}
+.search:hover {
+  background-color: #ffbdb1;
+  background: linear-gradient(270deg, #ffbdb1);
+  transition: all 0.4s linear;
+}
+
+.email {
+  width: 232px;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.emailchoice {
+  width: 145px;
+  padding: 20px 0;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #bababa;
+  line-height: 1.5;
+}
+
+.emailcom {
+  width: 145px;
+  padding: 20px 0;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #bababa;
+  line-height: 1.5;
+  text-indent: 15px;
+}
+
+.emailgray {
+  background-color: #f1f1f1;
+  width: 145px;
+  padding: 20px 0;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #bababa;
+  line-height: 1.5;
+  text-indent: 15px;
+}
+
+.birthY,
+.birthM,
+.birthD {
+  width: 173px;
+  padding: 20px;
+  font-size: 17px;
+  border-radius: 10px;
+  color: #bababa;
+  text-indent: 15px;
+  background-color: #fff;
+}
+
+.sign {
+  margin: 10px 20px;
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.signOk,
+.signNo {
+  width: 130px;
+  height: 48px;
+  margin: 30px;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.signOk {
+  background-color: #f7d3cd;
+}
+.signOk:hover {
+  background-color: #ffbdb1;
+  background: linear-gradient(270deg, #ffbdb1);
+  transition: all 0.4s linear;
+}
+
+.signNo {
+  background-color: #feea6d;
+}
+.signNo:hover {
+  background-color: #ffd23e;
+  background: linear-gradient(270deg, #ffd23e);
+  transition: all 0.4s linear;
+}
+    </style>
+  </head>
+  <body>
+    <input type="tel" id="numTx" class="numTx" placeholder="휴대폰 번호 입력('-'제외 11자리 입력)" />
+    <input type="tel" class="numTx" placeholder="휴대폰 번호 입력('-'제외 11자리 입력)" />
+
+<!-- 오더리스트 -->
+<div class="ordlist">
+                    <table class="ordtd ordNo">
+                      <tr>
+                        <!-- <td class="donutimg">
+                          <img src="" class="donut foul" />
+                        </td>
+                        <td class="donutname"></td>
+                        <td class="pay"></td>
+                        <td class="day">22.11.15</td>
+                        <td class="state">배송완료</td> -->
+                      </tr>
+                      <tr>
+                        <!-- <td class="donutimg">
+                          <img src="" class="donut six" />
+                        </td>
+                        <td class="donutname"></td>
+                        <td class="pay"></td>
+                        <td class="day">22.12.01</td>
+                        <td class="state">배송 중</td> -->
+                      </tr>
+                      <tr>
+                        <!-- <td class="donutimg">
+                          <img src="" class="donut fafa" />
+                        </td>
+                        <td class="donutname"></td>
+                        <td class="pay"></td>
+                        <td class="day">22.12.14</td>
+                        <td class="state">상품 준비 중</td> -->
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="reviewcont">
+                    <table class="reviewtd reviewNo">
+                      <tr>
+                        <td class="donutimg">
+                          <img src="" class="donut foul" />
+                        </td>
+                        <td class="donutname"></td>
+                        <td class="pay">상품은 잘 받으셨나요?<br />리뷰로 경험을 알려주세요!</td>
+                        <td class="day">22.11.16~<br />22.11.23</td>
+                        <td class="state"><button class="reviewpage" value="리뷰 남기기">리뷰 남기기</button></td>
+                      </tr>
+                      <tr>
+                        <td class="donutimg">
+                          <img src="" class="donut six" />
+                        </td>
+                        <td class="donutname"></td>
+                        <td class="pay">상품은 잘 받으셨나요?<br />리뷰로 경험을 알려주세요!</td>
+                        <td class="day">22.12.01~<br />22.12.08</td>
+                        <td class="state"><button class="reviewpage" value="리뷰 남기기">리뷰 남기기</button></td>
+                      </tr>
+                      <tr>
+                        <td class="donutimg">
+                          <img src="" class="donut fafa" />
+                        </td>
+                        <td class="donutname"></td>
+                        <td class="pay">상품은 잘 받으셨나요?<br />리뷰로 경험을 알려주세요!</td>
+                        <td class="day">22.12.15~<br />22.12.22</td>
+                        <td class="state"><button class="reviewpage" value="리뷰 남기기">리뷰 남기기</button></td>
+                      </tr>
+                    </table>
+                  </div>
+    <script>
+      //버리는 코드 저장고
+
+      //이메일 1차
+      function mailcheck() {
+            i = document.join.$emailchoice.selectedIndex;
+            let mail = document.join.$emailchoice.option[i].value;
+            document.join.$emailcom.value = mail;
+        }
+
+      //생년월일 1차
+      let startYear = "2022";
+        let today = new Date();
+        let todayYear = today.getFullYear();
+        let index = 0;
+
+        for (let i = startYear; i <= todayYear; i++) {
+            document.getElementsByClassName('birthY').option[index] = new Option(i, i);
+            index++;
+        }
+        index = 0;
+        for (let z = 1; z < 13; z++){
+            document.getElementsByClassName('birthM').option[index] = new Option(z, z);
+            index++;
+        }
+        lastday();
+
+        function lastday() {
+            let Year = document.getElementsByClassName('birthY').value;
+            let Month = document.getElementsByClassName('birthM').value;
+            let day = new Date(new Date(Year, Month, 1) - 86400000).getDate();
+            
+            let dayindex_len = document.getElementsByClassName('birthD').length;
+            if (day < dayindex_len) {
+                for (let i = dayindex_len + 1; i <= day; i++){
+                    document.getElementsByClassName('birthB').options[i - 1] = new Option(i, i);
+                }
+            } else if (day < dayindex_len) {
+                for (let i = dayindex_len; i >= day; i--){
+                    document.getElementsByClassName('birthD').options[i] = null;
+                }
+             }
+        }
+
+        //생년월일2차
+        for (let y = 2022; y > 2022 - 100; y--){
+            for (let m = 1; m < 13; m++){
+                for (let d = 1; d <= 31; d++){
+                    innerHTML(`<option>${d}</option>`)
+                }
+                innerHTML(`<option>${m}</option>`)
+            }
+            innerHTML(`<option>${y}</option>`)
+        }
+
+        //생년월일 3차
+        function selctEvent() {
+        document.$birthcon.birthY.onchange = selectFunY;
+        document.$birthcon.birthM.onchange = selectFunM;
+        document.$birthcon.birthD.onchange = selectFunD;
+    }
+    
+    function selectFunY(){
+        
+        let startYear = 2022;
+        let endYear = new Date().getFullYear();
+        let yearOption = '';
+        for (let birthY = startYear; birthY <= endYear; birthY++) {
+            yearOption += '<option> + birthY + </option>';
+        }
+        $birthY.innerHTML = yearOption;
+
+    }
+    function selectFunM(){
+        let startMonth = 1;
+        let endMonth = 12;
+        let monthOption = '';
+        for (let birthM = startMonth; birthM <= endMonth; birthM++) {
+            monthOption += '<option> + birthM + </option>';
+        }
+        $birthM.innerHTML = monthOption;
+    }
+
+    function selectFunD(){
+        let dateObj = new Date();
+        let starDate = 1;
+        let endDate = new Date(dateObj.getFullYear(), dateObj.getMonth() + 1, 0).getDate();
+        let dateOption = '';
+        for (let birthD = starDate; birthD <= endDate; birthD++) {
+            dateOption += '<option> + birthD + </option>';
+        }
+        $birthD.innerHTML = dateOption;
+    }
+    console.log(selectFunY());
+
+    //생년월일 4차
+    let selectbox = document.$frm.birthY;
+    let objOption = document.createElement("option");
+    
+    function selectFunY() {
+      let startYear = 2022;
+      let endYear = new Date().getFullYear();
+      let yearOption = '';
+      for (let birthY = startYear; birthY <= endYear; birthY++) {
+        yearOption += '<option> + birthY + </option>';
+      }
+      $birthY.innerHTML = yearOption;
+    };
+    objOption.value = "years";
+    selectbox.option.add(objOption);
+
+    //전체코드 다시 쓰기
+    (function () {
+  'use strict';
+
+  const $frm = document.querySelector('.form');
+  const idTx = $frm.idTx.value;
+  const passTx = $frm.passTx.value;
+  const checkPass = $frm.checkPassTx.value;
+  const nameTx = $frm.nameTx.value;
+  const addTx = $frm.addTx.value;
+  const readdTx = $frm.readdTx.value;
+  const numTx = $frm.numTx.value;
+  const email = $frm.email.value;
+  const emailcom = $frm.emailcom.value;
+  const birthcon = $frm.birthcon.value;
+
+  $frm.addEventListener('submit', chk);
+
+  function emptyValChk(ele, name) {
+    if (!ele.value) {
+      input.innerHTML = `<p>필수 입력 사항입니다.</p>`;
+      ele.focus();
+      return true;
+    }
+    return false;
+  }
+
+  function chk(e) {
+    if (
+      emptyValChk(idTx) ||
+      emptyValChk(passTx) ||
+      emptyValChk(checkPass) ||
+      emptyValChk(addTx) ||
+      emptyValChk(readdTx) ||
+      emptyValChk(numTx) ||
+      emptyValChk(nameTx) ||
+      emptyValChk(email) ||
+      emptyValChk(emailcom) ||
+      emptyValChk(birthcon)
+    ) {
+      return e.preventDefault();
+    }
+  }
+  const idReg = /^[a-z0-9_-]{6,20}$/; //아이디 정규식
+  const passReg = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/; //비밀번호 정규식
+  const numReg = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/; //전화번호 정규식
+  const emailReg = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i; //이메일 정규식
+  if (!idReg.test(idTx)) {
+    $frm.idTxcon.innerHTML = `<p>규칙과 맞지 않습니다.</p>`;
+    idTx.focus();
+  } else if (!passReg.test(passTx)) {
+    $frm.password.innerHTML = `<p>규칙과 맞지 않습니다.</p>`;
+    passTx.focus();
+  } else if (!numReg.test(numTx)) {
+    $frm.numTxcon.innerHTML = `<p>규칙과 맞지 않습니다.</p>`;
+    numTx.focus();
+  }
+
+  if (passTx !== checkPass) {
+    //비밀번호를 다시 확인해주세요.
+    checkPass.innerHTML = `<p>비밀번호를 다시 확인해주세요.</p>`;
+    checkPass.focus();
+    return e.preventDefault();
+  }
+
+  //select값 input에 넣기(아직 안됌)
+  const domainListEl = document.querySelector('.emailchoice');
+  const domainInputEl = document.querySelector('.emailcom');
+  domainListEl.addEventListener('change', (e) => {
+    if (event.target.value !== '직접입력') {
+      domainInputEl.value = event.target.value;
+      domainInputEl.disabled = true;
+    } else {
+      domainInputEl.value = '';
+      domainInputEl.disabled = false;
+    }
+  });
+  //생일 날짜 for문
+  //Y에 올해부터 -100년. M에 1~12, D에 1~31. 근데 이제 윤달과 30, 31일이 있는...
+  //Y가 입력되면 m,M되면 d,
+  //option을 만들고 option에 for문.
+  const birthYEl = document.querySelector('.birthY');
+  isYearOptionExisted = false;
+  birthYEl.addEventListener('focus', function () {
+    if (isYearOptionExisted) {
+      isYearOptionExisted = true;
+      for (let y = 1940; y <= 2022; y++) {
+        const yearOption = document.createElement('option');
+        yearOption.setAttribute('value', i);
+        yearOption.innerText = i;
+        this.appendChild(yearOption);
+      }
+    }
+  });
+  const birthMEl = document.querySelector('.birthM');
+  isMonthOptionExisted = false;
+  birthMEl.addEventListener('focus', function () {
+    if (isMonthOptionExisted) {
+      isMonthOptionExisted = true;
+      for (let m = 1; m <= 12; m++) {
+        const monthOption = document.createElement('option');
+        monthOption.setAttribute('value', i);
+        monthOption.innerText = i;
+        this.appendChild(monthOption);
+      }
+    }
+  });
+  const birthDEl = document.querySelector('.birthD');
+  isDayOptionExisted = false;
+  birthDEl.addEventListener('focus', function () {
+    if (isDayOptionExisted) {
+      isDayOptionExisted = true;
+      for (let d = 1; d <= 31; d++) {
+        const dayOption = document.createElement('option');
+        dayOption.setAttribute('value', i);
+        dayOption.innerText = i;
+        this.appendChild(dayOption);
+      }
+    }
+  });
+});
+
+//고객센터 클릭이벤트 1차
+const litruck = document.querySelector('.litruck');
+  const lidonut = document.querySelector('.lidonut');
+  const lidonutast = document.querySelector('.lidonutast');
+  const lipay = document.querySelector('.lipay');
+  const liwork = document.querySelector('.liwork');
+  const likeep = document.querySelector('.likeep');
+  const lihot = document.querySelector('.lihot');
+  const whitediv1 = document.querySelector('.whitediv1');
+  const whitediv2 = document.querySelector('.whitediv2');
+  const whitediv3 = document.querySelector('.whitediv3');
+  const whitediv4 = document.querySelector('.whitediv4');
+  const whitediv5 = document.querySelector('.whitediv5');
+  const whitediv6 = document.querySelector('.whitediv6');
+  const whitediv7 = document.querySelector('.whitediv7');
+let event = false;
+  litruck.addEventListener('click', (e) => {
+    if (!event) {
+      whitediv1.classList.toggle('showask', true);
+      whitediv1.classList.toggle('Noshow', false);
+      whitediv1.innerHTML = `
+                A. 송장 출력 이후 1~2일 내 배송됩니다. <br>
+                도서·산간 지방은 7일 이내 배송됩니다. <br>
+                날씨와 도로상황에 따라 더 걸릴 수 있습니다.`;
+      whitediv2.classList.toggle('showask');
+      whitediv3.classList.toggle('showask');
+      whitediv4.classList.toggle('showask');
+      whitediv5.classList.toggle('showask');
+      whitediv6.classList.toggle('showask');
+      whitediv7.classList.toggle('showask');
+      whitediv2.classList.toggle('Noshow');
+      whitediv3.classList.toggle('Noshow');
+      whitediv4.classList.toggle('Noshow', true);
+      whitediv5.classList.toggle('Noshow', true);
+      whitediv6.classList.toggle('Noshow', true);
+      whitediv7.classList.toggle('Noshow', true);
+      event = true;
+    } else {
+      whitediv1.classList.toggle('showask', false);
+      whitediv1.classList.toggle('Noshow', true);
+      event = false;
+    }
+  });
+  lidonut.addEventListener('click', (e) => {
+    if (!event) {
+      whitediv2.classList.toggle('showask', true);
+      whitediv2.classList.toggle('Noshow', false);
+      whitediv2.innerHTML = `
+                A. 배송 과정 중 발생한 다양한 이벤트로 모양이 조금 찌그러질 수 있습니다.<br>
+                하지만 맛과 영양에는 변함이 없으니 안심하고 드셔주세요.`;
+      whitediv1.classList.toggle('showask', false);
+      whitediv3.classList.toggle('showask', false);
+      whitediv4.classList.toggle('showask', false);
+      whitediv5.classList.toggle('showask', false);
+      whitediv6.classList.toggle('showask', false);
+      whitediv7.classList.toggle('showask', false);
+      whitediv1.classList.toggle('Noshow', true);
+      whitediv3.classList.toggle('Noshow', true);
+      whitediv4.classList.toggle('Noshow', true);
+      whitediv5.classList.toggle('Noshow', true);
+      whitediv6.classList.toggle('Noshow', true);
+      whitediv7.classList.toggle('Noshow', true);
+      event = true;
+    } else {
+      whitediv2.classList.toggle('showask', false);
+      whitediv2.classList.toggle('Noshow', true);
+      whitediv2.innerHTML = ``;
+      event = false;
+    }
+  });
+  lidonutast.addEventListener('click', (e) => {
+    if (!event) {
+      whitediv3.classList.toggle('showask', true);
+      whitediv3.classList.toggle('Noshow', false);
+      whitediv3.innerHTML = `
+            A. 노티드는 당일생산·당일폐기 원칙으로 운영되고 있습니다. <br>
+            배송 받으신 후 빠른 시일 내로 드시길 권하고 있으며, 이상할 경우 드시지 말아주세요.<br>
+            받은 당일 이상이 있으신 경우 노티드 고객센터로 연락바랍니다.`;
+      whitediv1.classList.toggle('showask', false);
+      whitediv2.classList.toggle('showask', false);
+      whitediv4.classList.toggle('showask', false);
+      whitediv5.classList.toggle('showask', false);
+      whitediv6.classList.toggle('showask', false);
+      whitediv7.classList.toggle('showask', false);
+      whitediv1.classList.toggle('Noshow', true);
+      whitediv2.classList.toggle('Noshow', true);
+      whitediv4.classList.toggle('Noshow', true);
+      whitediv5.classList.toggle('Noshow', true);
+      whitediv6.classList.toggle('Noshow', true);
+      whitediv7.classList.toggle('Noshow', true);
+      event = true;
+    } else {
+      whitediv3.classList.toggle('showask', false);
+      whitediv3.classList.toggle('Noshow', true);
+      whitediv3.innerHTML = ``;
+      event = false;
+    }
+  });
+  lipay.addEventListener('click', (e) => {
+    if (!event) {
+      whitediv4.classList.toggle('showask', true);
+      whitediv4.classList.toggle('Noshow', false);
+      whitediv4.innerHTML = `
+            A. 구매 페이지에서 구매가 안되는 경우 품절일 수 있습니다.<br>
+            다른 좋은 상품도 많으니 봐주시길 바랍니다.`;
+      whitediv1.classList.toggle('showask', false);
+      whitediv2.classList.toggle('showask', false);
+      whitediv3.classList.toggle('showask', false);
+      whitediv5.classList.toggle('showask', false);
+      whitediv6.classList.toggle('showask', false);
+      whitediv7.classList.toggle('showask', false);
+      whitediv1.classList.toggle('Noshow', true);
+      whitediv2.classList.toggle('Noshow', true);
+      whitediv3.classList.toggle('Noshow', true);
+      whitediv5.classList.toggle('Noshow', true);
+      whitediv6.classList.toggle('Noshow', true);
+      whitediv7.classList.toggle('Noshow', true);
+      event = true;
+    } else {
+      whitediv4.classList.toggle('showask', false);
+      whitediv4.classList.toggle('Noshow', true);
+      whitediv4.innerHTML = ``;
+      event = false;
+    }
+  });
+  liwork.addEventListener('click', (e) => {
+    if (!event) {
+      whitediv5.classList.toggle('showask', true);
+      whitediv5.classList.toggle('Noshow', false);
+      whitediv5.innerHTML = `
+                A. 직접 구매하시면 당일 생산된 것을 빠르게 드실 수 있지만, 배송의 경우 시일이 걸립니다. <br>
+                최상의 맛을 원하신다면 매장 방문을 추천드립니다.`;
+      whitediv1.classList.toggle('showask', false);
+      whitediv2.classList.toggle('showask', false);
+      whitediv3.classList.toggle('showask', false);
+      whitediv4.classList.toggle('showask', false);
+      whitediv6.classList.toggle('showask', false);
+      whitediv7.classList.toggle('showask', false);
+      whitediv1.classList.toggle('Noshow', true);
+      whitediv2.classList.toggle('Noshow', true);
+      whitediv3.classList.toggle('Noshow', true);
+      whitediv4.classList.toggle('Noshow', true);
+      whitediv6.classList.toggle('Noshow', true);
+      whitediv7.classList.toggle('Noshow', true);
+      event = true;
+    } else {
+      whitediv5.classList.toggle('showask', false);
+      whitediv5.classList.toggle('Noshow', true);
+      whitediv5.innerHTML = ``;
+      event = false;
+    }
+  });
+  likeep.addEventListener('click', (e) => {
+    if (!event) {
+      whitediv6.classList.toggle('showask', true);
+      whitediv6.classList.toggle('Noshow', false);
+      whitediv6.innerHTML = `
+                A. 구매 후 되도록 빠른 시일 내에 섭취하시길 권고드립니다.`;
+      whitediv1.classList.toggle('showask', false);
+      whitediv2.classList.toggle('showask', false);
+      whitediv3.classList.toggle('showask', false);
+      whitediv4.classList.toggle('showask', false);
+      whitediv5.classList.toggle('showask', false);
+      whitediv7.classList.toggle('showask', false);
+      whitediv1.classList.toggle('Noshow', true);
+      whitediv2.classList.toggle('Noshow', true);
+      whitediv3.classList.toggle('Noshow', true);
+      whitediv4.classList.toggle('Noshow', true);
+      whitediv5.classList.toggle('Noshow', true);
+      whitediv7.classList.toggle('Noshow', true);
+      event = true;
+    } else {
+      whitediv6.classList.toggle('showask', false);
+      whitediv6.classList.toggle('Noshow', true);
+      whitediv6.innerHTML = ``;
+      event = false;
+    }
+  });
+  lihot.addEventListener('click', (e) => {
+    if (!event) {
+      whitediv7.classList.toggle('showask', true);
+      whitediv7.classList.toggle('Noshow', false);
+      whitediv7.innerHTML = `
+                A. 전자레인지와 에어프라이기의 경우 크림의 식감이 달라질 수 있습니다. <br>
+                냉동 보관 후 드시기 전에 실온해동을 권장해드립니다.`;
+
+      whitediv1.classList.toggle('showask', false);
+      whitediv2.classList.toggle('showask', false);
+      whitediv3.classList.toggle('showask', false);
+      whitediv4.classList.toggle('showask', false);
+      whitediv5.classList.toggle('showask', false);
+      whitediv6.classList.toggle('showask', false);
+      whitediv1.classList.toggle('Noshow', true);
+      whitediv2.classList.toggle('Noshow', true);
+      whitediv3.classList.toggle('Noshow', true);
+      whitediv4.classList.toggle('Noshow', true);
+      whitediv5.classList.toggle('Noshow', true);
+      whitediv6.classList.toggle('Noshow', true);
+      event = true;
+    } else {
+      whitediv7.classList.toggle('showask', false);
+      whitediv7.classList.toggle('Noshow', true);
+      whitediv7.innerHTML = ``;
+      event = false;
+    }
+  });
+
+  //소셜 로그인 카카오
+  const LoginKakao=()=>{
+  
+  const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id${REST_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
+
+      const handleLogin = () => {
+          window.location.href = KAKAO_AUTH_URL;
+      };
+
+      return (
+          kakao.addEventListener('click', e => {
+              handleLogin;
+          })
+      )
+  };
+  const kakao = document.querySelector('.kakaoA');
+  const REST_KEY = 'cf0835e0a593c7ae5b8d41e69860b6c5';
+  const REDIRECT_URI = 'http://index-login.html';
+  kakao.addEventListener('click', (e) => {
+    Kakao.Auth.authorize({
+      redirectUri: `${REDIRECT_URI}`,
+      prompts: 'none',
+    });
+  });
+  Kakao.init('a66d7d1927895d88fac34d2a6ce86a31');
+  Kakao.Auth.createLoginButton({
+    container: '#kakao-login-btn',
+    success: function (authObj) {
+      alert(JSON.stringify(authObj));
+    },
+    fail: function (err) {
+      alert(JSON.stringify(err));
+    },
+  });
+
+  // 소셜로그인 네이버
+  const naver = document.querySelector('.naverA');
+  const Client_ID = 'I9M3bHEXDAzinkXQva0M';
+  const NAVER_Client_Secret = 'XTrLWuKTL2';
+  const Naver_Open_Api = 'https://nid.naver.com/oauth2.0/authorize';
+  const NAVER_CALLBACK_URL = 'http://127.0.0.1:59624/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%8D%BC%EC%8A%A4%ED%8A%B8/html/index-mypage.html';
+  const NAVER_SERVICE_URL = 'http://127.0.0.1:59624/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%8D%BC%EC%8A%A4%ED%8A%B8/html/index-login.html';
+  const naverLogin = new naver.LoginWithNaverId({
+    clientId: `${Client_ID}`,
+    callbackUrl: `${NAVER_CALLBACK_URL}`,
+    loginButton: { color: 'green', type: 2, height: 40 },
+  });
+  naverLogin.getLoginStatus(function (status) {
+    if (status) {
+      const nickName = naverLogin.user.getNickName();
+      const age = naverLogin.user.getAge();
+      const birthday = naverLogin.user.getBirthday();
+
+      //닉네임을 선택하지 않으면 선택창으로 돌아갑니다.
+      if (nickName === null || nickName === undefined) {
+        alert('별명이 필요합니다. 정보제공을 동의해주세요.');
+        naverLogin.reprompt();
+        return;
+      } else {
+        setLoginStatus(); //모든 필수 정보 제공 동의하면 실행하는 함수
+      }
+    }
+  });
+  naverLogin.init();
+
+  //소셜 로그인 구글
+  const Google = document.querySelector('.googleA');
+  const Google_Client_ID = '676485563882-hsfjkeuob7k1j138e2dr2hq9c573t2pi.apps.googleusercontent.com';
+  const Google_Client_Secret = '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';
+  function handleCredentialResponse(response) {
+    // decodeJwtResponse() is a custom function defined by you
+    // to decode the credential response.
+    const responsePayload = parseJwt(response.credential);
+    console.log('ID: ' + responsePayload.sub);
+    console.log('Full Name: ' + responsePayload.name);
+    console.log('Given Name: ' + responsePayload.given_name);
+    console.log('Family Name: ' + responsePayload.family_name);
+    console.log('Image URL: ' + responsePayload.picture);
+    console.log('Email: ' + responsePayload.email);
+  }
+
+  function parseJwt(token) {
+    var base64Url = token.split('.')[1];
+    var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    var jsonPayload = decodeURIComponent(
+      atob(base64)
+        .split('')
+        .map(function (c) {
+          return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        })
+        .join('')
+    );
+
+    return JSON.parse(jsonPayload);
+  }
+
+  //고객센터 애니메이션
+  // showtitle.forEach(function (el) {
+  //   el.addEventListener('click', toggleAccordion);
+  // });
+  // function toggleAccordion(el) {
+  //   var targetText = el.currentTarget.nextElementSibling.classList.value;
+  //   var target = el.currentTarget;
+  //   console.log(targetText.value)
+  //   if (targetText.value === 'show') {
+  //     targetText.remove('show');
+  //   } else {
+  //     showtitle.forEach(function (el) {
+  //       showask.forEach(function (el) {
+  //         el.classList.remove('show');
+  //       });
+  //     });
+  //     targetText.toggle('show', true);
+  //     target.classList.add('accordionTitleActive');
+  //   }
+  // }
+  //헤더 로그인
+  // const MYPAGE = 'http://127.0.0.1:59624/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%8D%BC%EC%8A%A4%ED%8A%B8/html/index-mypage.html';
+  // const LOGIN = 'http://127.0.0.1:56828/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%8D%BC%EC%8A%A4%ED%8A%B8/html/index-login.html';
+  // const SIGN_UP = 'http://127.0.0.1:59624/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%8D%BC%EC%8A%A4%ED%8A%B8/html/index-sign_up.html';
+  // const loginmove = document.querySelector('.loginmove');
+  // loginmove.addEventListener('click', (e) => {
+  //   window.location.href = LOGIN;
+  // });
+
+  //json
+  mydata.forEach(function jsonimport(table, data) {
+    for (let i = 0; i < mydata.length; i++) {
+      let tdmake = document.createElement('td');
+      table.appendChild = tdmake;
+      tdmake.classList = 'donutimg';
+      tdmake.createElement = 'img';
+      tdmake.img.src = data[i].image;
+
+      let tdmake2 = document.createElement('td');
+      table.appendChild = tdmake2;
+      tdmake2.classList = 'donutname';
+      tdmake2.textContent = data[i].name;
+
+      let tdmake3 = document.createElement('td');
+      table.appendChild = tdmake3;
+      tdmake3.classList = 'pay';
+      tdmake3.textContent = data[i].price;
+    }
+    tr.textContent = jsonimport(tr, mydata);
+  });
+    </script>
+  </body>
+</html>

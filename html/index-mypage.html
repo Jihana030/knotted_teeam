@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index-mypage.css" />
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet" />
+    <title>mypage</title>
+  </head>
+  <body>
+    <!--마우스커서 커스텀-->
+    <div id="cursor"></div>
+    <script src="./js/mouseCurser.js"></script>
+    <!-- header -->
+    <div id="wrapper">
+        <div id="header">
+            <nav>
+                <div class="logo" data-menuanchor="section1">
+                    <a href="#section1">KNOTTED</a>
+                </div>
+                <div class="category">
+                    <ul class="menu">
+                        <li data-menuanchor="section2" class="none768">
+                            <a href="#section2">DONUT</a>
+                        </li>
+                        <li data-menuanchor="section3" class="none768">
+                            <a href="#section3">DESSERT</a>
+                        </li>
+                        <li data-menuanchor="section4" class="none768">
+                            <a href="#section4">GOODS</a>
+                        </li>
+                        <li data-menuanchor="section5" class="none768">
+                            <a href="#section5">CAFE</a>
+                        </li>
+                        <li data-menuanchor="section6" class="none768">
+                            <a href="#section6">EVENT & PROMOTION</a>
+                        </li>
+                        <li data-menuanchor="section7" class="none768">
+                            <a href="#section7">ABOUT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn hover">
+                    <a href="#">
+                        <span class="login">LOG I N</span>
+                    </a>
+                </div>
+
+                <!-- search form -->
+                <div>
+                    <button type='button' id="modal_btn" class="btn-allmenu btn-allmenu1"></button>
+                    <div class="black_bg"></div>
+                    <div class="modal_wrap">
+                        <div class="modal_close"><a href="#"><img src="./image/버튼 호버_창닫기 icon.png"></a></div>
+                        <div class="search-div">
+                            <form action="" class="search-form">
+                                <input type="text" class="search-input" placeholder="what's your favorite?">
+                            </form>
+                        </div>
+                        <!-- 팝업 호버 -->
+                        <div class="search-popup">
+                            <div class="search-popup-content">
+                                <div class="search-popup-content-left float-left">
+                                    <div class="search-popup-title"> Popular </div>
+                                    <div class="popular-keyword">
+                                        <ul class="popular-keyword-list ul">
+                                            <li class="popular-keyword-item">
+                                                <a href="">우유 생크림 도넛</a>
+                                            </li>
+                                            <li class="popular-keyword-item">
+                                                <a href="">클래식 바닐라 도넛</a>
+                                            </li>
+                                            <li class="popular-keyword-item">
+                                                <a href="">얼그레이 도넛</a>
+                                            </li>
+                                            <li class="popular-keyword-item">
+                                                <a href="">민트 초코 도넛</a>
+                                            </li>
+                                            <li class="popular-keyword-item">
+                                                <a href="">라즈베리 도넛</a>
+                                            </li>
+                                            <li class="popular-keyword-item">
+                                                <a href="">스트로베리 도넛</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="search-popup-content-right float-right">
+                                    <div class="search-popup-title"> Recommended </div>
+                                    <div class="collection-box">
+                                        <ul class="collection-box-list">
+                                            <li class="collection-box-item">
+                                                <a href="#">
+                                                    <div class="collection-image">
+                                                        <img src="./image/버튼 호버_생크림 도넛.png" alt="image">
+                                                    </div>
+                                                    <div class="collection-name"></div>
+                                                </a>
+                                            </li>
+                                            <li class="collection-box-item">
+                                                <a href="#">
+                                                    <div class="collection-image">
+                                                        <img src="./image/버튼 호버_노세범.png" alt="image">
+                                                    </div>
+                                                    <div class="collection-name"></div>
+                                                </a>
+                                            </li>
+                                            <li class="collection-box-item">
+                                                <a href="#">
+                                                    <div class="collection-image ">
+                                                        <img src="./image/버튼 호버_노즈워크.png" alt="image">
+                                                    </div>
+                                                    <div class="collection-name"></div>
+                                                </a>
+                                            </li>
+                                            <li class="collection-box-item">
+                                                <a href="#">
+                                                    <div class="collection-image collection-top">
+                                                        <img src="./image/버튼 호버_손세정제.png" alt="image">
+                                                    </div>
+                                                    <div class="collection-name"></div>
+                                                </a>
+                                            </li>
+                                            <li class="collection-box-item">
+                                                <a href="#">
+                                                    <div class="collection-image collection-top">
+                                                        <img src="./image/버튼 호버_슈가베어.png" alt="image">
+                                                    </div>
+                                                    <div class="collection-name"></div>
+                                                </a>
+                                            </li>
+                                            <li class="collection-box-item">
+                                                <a href="#">
+                                                    <div class="collection-image collection-top">
+                                                        <img src="./image/버튼 호버_아이스크림.png" alt="image">
+                                                    </div>
+                                                    <div class="collection-name"></div>
+                                                </a>
+                                            </li>
+                                            <li class="collection-box-item">
+                                                <a href="#">
+                                                    <div class="collection-image">
+                                                        <img src="./image/버튼 호버_버즈(pink).png" alt="image">
+                                                    </div>
+                                                    <div class="collection-name"></div>
+                                                </a>
+                                            </li>
+                                            <li class="collection-box-item">
+                                                <a href="#">
+                                                    <div class="collection-image">
+                                                        <img src="./image/버튼 호버_버즈(blue).png" alt="image">
+                                                    </div>
+                                                    <div class="collection-name"></div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- header -->
+    <!--마이페이지-->
+    <div class="container" autocomplete="off">
+      <form action="" class="frm" autocomplete="off" >
+        <label for="listcont" class="listcont"><!--사이드바-->
+          <ul>
+            <li class="mypage" data-view="orlist">마이페이지</li>
+          </ul>
+          <ul class="mylist">
+            <li class="infor list" data-view="infor">
+              <i class="fa-solid fa-user img"></i>
+              회원 정보
+            </li>
+            <li class="heart list" data-view="orlist">
+              <i class="fa-solid fa-heart img"></i>
+              찜 목록
+            </li>
+            <li class="salelist list" data-view="orlist">
+              <i class="fa-regular fa-rectangle-list img"></i>
+              구매 목록
+            </li>
+            <li class="orderlist list" data-view="orderview">
+              <i class="fa-solid fa-truck img"></i>
+              주문배송조회
+            </li>
+            <li class="review list" data-view="reviewlist">
+              <i class="fa-regular fa-message img"></i>
+              내가 쓴 리뷰
+            </li>
+            <li class="salecupon list" data-view="orlist">
+              <i class="fa-solid fa-ticket img"></i>
+              할인쿠폰
+            </li>
+            <li class="service list" data-view="serve">
+              <i class="fa-solid fa-headset img"></i>
+              고객센터
+            </li>
+          </ul>
+        </label>
+        <div class="welcom">
+          <div class="profile"><!--프로필-->
+            <div class="welcoment">
+              <img src="../jpg/Group 2.png" alt="스마일" class="smile img" />
+              <p class="ment">
+                Notted님! <br />
+                환영합니다!
+              </p>
+            </div>
+            <input type="button" class="myadj" value="개인정보 수정" />
+            <i class="fa-solid fa-gear gear img"></i>
+          </div>
+          <div class="summary"><!--카테고리 클릭시 나오는 내용부분-->
+              <div class="orlist" data-view="orlist"><!--제일 먼저 보이는 부분-->
+                <div class="orderview">
+                  <div class="ordertitle ordwidth">
+                    <img src="../디자인/Asset 1.png" alt="주문배송조회" class="truck img" />
+                    주문배송조회
+                  </div>
+                  <div class="ordlist">
+                    <table class="ordtd ordNo">
+                    </table>
+                  </div>
+                </div>
+                <div class="reviewlist">
+                  <div class="reviewtitle rewidth">
+                    <span class="reviwetxt">리뷰 남기기</span>
+                    <i class="fa-regular fa-comment-dots img"></i>
+                  </div>
+                  <div class="reviewcont">
+                    <table class="reviewtd reviewNo">
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="inforcon inforadj" data-view="infor"><!--개인정보-->
+                <div class="infor_container">
+                  <!--form-->
+                  <div class="formct"><!--왜인지 없으면 양식이 죽음-->
+                    <!--label-->
+                    <form action="" method="post" class="form" autocomplete="off" target="iframe">
+                      <div class="labcon">
+                        <label for="idTx" class="id"
+                          >아이디
+                          <span class="idTxcon">
+                            <input
+                              type="text"
+                              id="idTx"
+                              class="idTx butxt"
+                              placeholder="아이디 입력(영어 + 숫자 6~20자)"
+                              value="knotted22"
+                              autofocus
+                            />
+                            <input type="button" value="중복 확인" class="double" />
+                          </span>
+                          <div class="idiv"></div>
+                        </label>
+                        <label for="passTx" class="password"
+                          >비밀번호
+                          <input type="password" id="passTx" class="passTx butxt" placeholder="비밀번호 입력(문자, 숫자, 특수문자 포함 8~20자)" />
+                          <div class="passiv"></div>
+                        </label>
+                        <label for="checkPassTx" class="checkpass"
+                          >비밀번호 확인
+                          <input type="password" id="checkPassTx" class="checkPassTx butxt" placeholder="비밀번호를 다시 한 번 입력해주세요." />
+                          <div class="cpassiv"></div>
+                        </label>
+                        <label for="nameTx" class="name"
+                          >이름
+                          <input type="text" id="nameTx" class="nameTx butxt" placeholder="이름을 입력해주세요." value="노티드" />
+                          <div class="nameiv"></div>
+                        </label>
+                        <label for="addTx" class="address"
+                          >주소
+                          <span class="addTxcon">
+                            <input type="text" id="addTx" class="addTx butxt" placeholder="주소를 입력해주세요." />
+                            <input type="button" value="주소 검색" class="search" />
+                          </span>
+                          <input type="text" class="readdTx butxt" placeholder="상세주소를 입력해주세요." />
+                          <div class="addiv"></div>
+                        </label>
+                        <label for="numTx" class="numTxcon"
+                          >전화번호
+                          <input type="tel" id="numTx" class="numTx butxt" placeholder="휴대폰 번호 입력('-'제외 11자리 입력)" value="02-545-9377" />
+                          <div class="teliv"></div>
+                        </label>
+                        <label for="emailconcont" class="emailconcont"
+                          >이메일 주소
+                          <span class="emailcont">
+                            <input type="text" id="email" class="email butxt" placeholder="이메일 주소를 적어주세요." />
+                            <span class="gorbang">@</span>
+                            <input type="text" class="emailcom emailgray" />
+                            <select name="email" id="emailchoice" class="emailchoice">
+                              <option value="직접입력" class="choice">직접입력</option>
+                              <option value="naver.com" class="choice" selected>naver.com</option>
+                              <option value="hanmail.net" class="choice">hanmail.net</option>
+                              <option value="google.com" class="choice">gmail.com</option>
+                              <option value="kakao.com" class="choice">kakao.com</option>
+                            </select>
+                          </span>
+                          <div class="emailiv"></div>
+                        </label>
+                        <label for="birth" class="birth"
+                          >생년월일
+                          <span class="birthcon">
+                            <select name="birthY" class="birthY">
+                              <!--js로 for문 돌리기-->
+                              <option value="year" disabled selected>2017</option>
+                            </select>
+                            <select name="birthM" class="birthM">
+                              <!--js로 for문 돌리기-->
+                              <option value="month" disabled selected>07</option>
+                            </select>
+                            <select name="birthD" class="birthD">
+                              <!--js로 for문 돌리기-->
+                              <option value="day" disabled selected>25</option>
+                            </select>
+                          </span>
+                        </label>
+                        <label for="sign" class="sign">
+                          <input type="button" value="수정" class="signOk">
+                          <input type="button" value="회원탈퇴" class="signNo">
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="inforcon orderview2" data-view="orderview">
+                <div class="ordertitle2 ordwidth2 ordNo2">
+                  <img src="../디자인/Asset 1.png" alt="주문배송조회" class="truck img" />
+                  주문배송조회
+                </div>
+                <div class="ordlist2">
+                  <table class="ordtd2 ordNo2">
+                  </table>
+                </div>
+              </div>
+              <div class="inforcon reviewlist2" data-view="reviewlist">
+                <div class="reviewtitle2 rewidth2 ">
+                  <span class="reviwetxt">리뷰 남기기</span>
+                  <i class="fa-regular fa-comment-dots img"></i>
+                </div>
+                <div class="reviewcont">
+                  <table class="reviewtd2">
+                  </table>
+                </div>
+              </div>
+              <div class="inforcon con_serv" data-view="serve">
+                <div class="servhelp">
+                  <img src="../디자인/고객센터배너.png" class="rainbow" alt="무엇을 도와드릴까요?" />
+                  <span class="helptxt">무엇을 도와드릴까요?</span>
+                </div>
+                <div class="qna">
+                  <div class="question">
+                    <span class="Asked">자주 묻는 질문</span>
+                    <ul class="ulasked">
+                      <li class="liasked">
+                        <div class='showtitle' data-view="litruck">Q. 배송은 얼마나 걸리나요?</div>
+                        <div class="showask Noshow" data-view="litruck">
+                          A. 송장 출력 이후 1~2일 내 배송됩니다. <br>
+                          도서·산간 지방은 7일 이내 배송됩니다. <br>
+                          날씨와 도로상황에 따라 더 걸릴 수 있습니다.
+                        </div>
+                      </li>
+                      <li class="liasked">
+                        <div class='showtitle' data-view="lidonut">Q. 도넛 모양이 이상해요.</div>
+                        <div class="showask Noshow" data-view="lidonut">
+                          A. 배송 과정 중 발생한 다양한 이벤트로 모양이 조금 찌그러질 수 있습니다.<br>
+                          하지만 맛과 영양에는 변함이 없으니 안심하고 드셔주세요.
+                        </div>
+                      </li>
+                      <li class="liasked">
+                       <div class='showtitle' data-view="lidonutast">Q. 도넛 맛이 이상해요.</div>
+                        <div class="showask Noshow" data-view="lidonutast">
+                          A. 노티드는 당일생산·당일폐기 원칙으로 운영되고 있습니다. <br>
+                          배송 받으신 후 빠른 시일 내로 드시길 권하고 있으며, 이상할 경우 드시지 말아주세요.<br>
+                          받은 당일 이상이 있으신 경우 노티드 고객센터로 연락바랍니다.
+                        </div>
+                      </li>
+                      <li class="liasked">
+                        <div class='showtitle' data-view="lipay">Q. 구매할 수 없어요.</div>
+                        <div class="showask Noshow" data-view="lipay">
+                          A. 구매 페이지에서 구매가 안되는 경우 품절일 수 있습니다.<br>
+                          다른 좋은 상품도 많으니 봐주시길 바랍니다.
+                        </div>
+                      </li>
+                      <li class="liasked">
+                        <div class='showtitle' data-view="liwork">Q. 직접 구매하는 것과 차이가 있나요?</div>
+                        <div class="showask Noshow" data-view="liwork">
+                          A. 직접 구매하시면 당일 생산된 것을 빠르게 드실 수 있지만, 배송의 경우 시일이 걸립니다. <br>
+                          최상의 맛을 원하신다면 매장 방문을 추천드립니다.
+                        </div>
+                      </li>
+                      <li class="liasked">
+                        <div class='showtitle' data-view="likeep">Q. 구매 후 얼마동안 보관 가능한가요?</div>
+                        <div class="showask Noshow" data-view="likeep">
+                          A. 구매 후 되도록 빠른 시일 내에 섭취하시길 권고드립니다.
+                        </div>
+                      </li>
+                      <li class="liasked">
+                        <div class='showtitle' data-view="lihot">Q. 전자레인지나 에어프라이기 사용이 가능한가요?</div>
+                        <div class="showask Noshow" data-view="lihot">
+                          A. 전자레인지와 에어프라이기의 경우 크림의 식감이 달라질 수 있습니다. <br>
+                          냉동 보관 후 드시기 전에 실온해동을 권장해드립니다.
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="inquiry">
+                    <span class="ftfinq">1:1 문의 남기기</span>
+                    <div class="servecon">
+                      <img src="../디자인/고객센터배너2.png" class="flower" alt="운영시간" />
+                      <ul class="servtime">
+                        <li class="servtime1 servtime2">고객센터 운영시간 9:00~18:00</li>
+                        <li class="servtime1 servcall">연락처 02-545-9377</li>
+                        <li class="servtime1 servemail">이메일 PROPOSAL@GFFG.CO.KR</li>
+                        <li class="servtime1 serveadd">주소 서울 강남구 도산대로 51길 16</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="event">
+        <p>
+          EVENT & <br />
+          PROMOTION
+        </p>
+        <hr />
+        <div class="eventimg">
+          <img src="../디자인/event shinhan.png" alt="이벤트" class="shinhan" />
+          <img src="../디자인/event buds2.png" alt="이벤트" class="buds" />
+          <img src="../디자인/event socar.png" alt="이벤트" class="socar" />
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+        <footer class="footer section fp-auto-height">
+            <div class="container">
+                <!--footer-top -->
+                <div class="footer-top">
+                    <!--footer-top-menu -->
+                    <div class="footer-top-menu float-left">
+                        <ul>
+                            <li><a href="#">기업 및 단체구매안내</a></li>
+                            <li><a href="#">가맹상담신청</a></li>
+                            <li><a href="#">사이버신문고</a></li>
+                        </ul>
+                    </div>
+                    <!--footer-top-menu -->
+                    <!--footer-top-cs -->
+                    <div class="footer-top-cs float-right">
+                        <dl>
+                            <dt>
+                                Address
+                            </dt>
+                            <dd>
+                                서울특별시 강남구 도산대로 51길 16 (강남구 신사동 654-13), GFFG
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                Customer Center
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        고객센터 : 02-545-9377 │ 팩스 : 02-545-9377
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <!-- E : footer-top-cs -->
+                </div>
+                <!-- E : footer-top -->
+                <!-- S : footer-bottom -->
+                <div class="footer-bottom">
+                    <div class="float-left float-none">
+                        <!-- S : footer-bottom-menu -->
+                        <div class="footer-bottom-menu">
+                            <ul>
+                                <li><a href="#" class="footer-bottom-menu__link">이용약관</a></li>
+                                <li><a href="#" class="footer-bottom-menu__link"><strong>개인정보처리방침</strong></a></li>
+                                <li><a href="#" class="footer-bottom-menu__link">위치기반서비스
+                                        이용약관</a></li>
+                                <!-- <li><a href="#" class="footer-bottom-menu__link">사이트맵</a></li> -->
+                                <li><a href="#" class="footer-bottom-menu__link modal-button"
+                                        data-target="modal-popup1">이메일
+                                        무단수집거부</a></li>
+                                <li><a href="#" class="footer-bottom-menu__link modal-button"
+                                        data-target="modal-popup2">법적고지</a></li>
+                                <li><a href="#" target="_blank" class="footer-bottom-menu__link">사업자정보확인</a></li>
+                            </ul>
+                        </div>
+                        <!-- E : footer-bottom-menu -->
+                        <!-- S : footer-bottom-info -->
+                        <div class="footer-bottom-info">
+                            <ul class="footer-bottom-info__address">
+                                <li>
+                                    서울특별시 강남구 도산대로 51길 16 (강남구 신사동 654-13), GFFG
+                                </li>
+                                <li>
+                                    고객센터 : 1577-4410 <span class="span">|</span> 팩스 : 02-2058-6777
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    대표이사 : 이준범 |
+                                </li>
+                                <li>
+                                    개인정보보호책임자 : 박원지 |
+                                </li>
+                                <li>
+                                    사업자등록번호 : 404-86-01054 |
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    통신판매업종신고증 : 제 2018-서울중구-0353호 |
+                                </li>
+                                <li>
+                                    대표이메일 : helpmaster@Knotted.co.kr
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- E : footer-bottom-info -->
+                        <div class="footer-bottom-copy">
+                            <span>Copyright ⓒ 2021 A TWOSOME PLACE Co., LTD.</span>
+                            <span>All Rights Reserved.</span>
+                        </div>
+                    </div>
+
+                    <!-- S : footer-bottom-sns -->
+                    <div class="footer-bottom-sns float-right">
+                        <a href="https://www.facebook.com/cafeknotted.official" class="footer-bottom-sns__link icon"
+                            title="새창 열림">
+                            <span>페이스북</span>
+                        </a>
+                        <a href="https://www.instagram.com/cafeknotted/?hl=ko" class="footer-bottom-sns__link icon"
+                            title="새창 열림">
+                            <span>인스타그램</span>
+                        </a>
+                        <a href="https://pf.kakao.com/_AUDFj" class="footer-bottom-sns__link icon" title="새창 열림">
+                            <span>카카오톡</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./goods.json" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./js/Knotted.js"></script>
+        <script src="./js/text-color.js"></script>
+        <script src="https://kit.fontawesome.com/7da9edd41b.js" crossorigin="anonymous"></script>
+        <script src="js/index-mypage.js"></script>
+  </body>
+</html>

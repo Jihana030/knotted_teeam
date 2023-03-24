@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            position: relative;
+        }
+
+        #header {
+            background: transparent;
+            backdrop-filter: none;
+            position: fixed;
+            justify-content: space-between;
+            width: 100%;
+            height: 100px;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+        #header li {
+            list-style-type: none;
+        }
+
+        #header a {
+            color: inherit;
+            text-decoration: inherit;
+            font-family: 'GangwonEduPowerExtraBoldA';
+        }
+
+        @font-face {
+            font-family: 'GangwonEduPowerExtraBoldA';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+
+        #header .logo {
+            float: left;
+            width: 216px;
+            height: 93px;
+            margin: 15px 0 0 64px;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+
+        #header .logo a {
+            display: block;
+            width: 216px;
+            height: 93px;
+            text-indent: -9999em;
+            background-image: url(/image/knotted\ Logo-1.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: 100% auto;
+        }
+
+        #header .category {
+            height: 100px;
+            background: transparent;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+            overflow: hidden;
+            z-index: -1;
+            /* backdrop-filter: blur(4px) saturate(80%); */
+        }
+
+        #header .category .menu {
+            display: inline-block;
+            text-align: right;
+            justify-content: space-between;
+        }
+
+        #header .category .menu>li {
+            float: left;
+            margin: 40px 50px;
+        }
+
+
+        #header .category .menu>li>a {
+            font-size: 20px;
+            color: black;
+            line-height: 27px;
+            font-weight: 700;
+            padding: 37px 0;
+            margin-top: 40px;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+
+        button {
+            font-family: inherit;
+            border: 0;
+            cursor: pointer;
+            padding: 0;
+            background-color: transparent;
+        }
+
+        #header .btn-allmenu {
+            float: right;
+            width: 24px;
+            height: 24px;
+            margin: 38px 64px 0 0;
+            text-indent: -9999em;
+            background: url(/image/ico_24_allmenu_black\ \(2\).svg) no-repeat 0 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div id="wrapper">
+        <div id="header">
+            <nav>
+                <div class="logo">
+                    <a href="#">KNOTTED</a>
+                </div>
+                <div class="category">
+                    <ul class="menu">
+                        <li>
+                            <a href="#">DONUT</a>
+                        </li>
+                        <li>
+                            <a href="#">DESSERT</a>
+                        </li>
+                        <li>
+                            <a href="#">GOODS</a>
+                        </li>
+                        <li>
+                            <a href="#">STORE</a>
+                        </li>
+                        <li data-menuanchor="#">
+                            <a href="#">LOGIN</a>
+                        </li>
+                        <li>
+                            <a href="#">EVENT & PROMOTION</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn-allmenu"></button>
+                </div>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>

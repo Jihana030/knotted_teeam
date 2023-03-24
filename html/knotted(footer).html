@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-section-footer #footer {
+            margin-top: 10px;
+        }
+
+        .footer {
+            padding: 48px 0;
+            background-color: rgb(215, 230, 223);
+            color: black;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+            font-family: 'GangwonEduPowerExtraBoldA';
+        }
+
+        .section .container {
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+        }
+
+        .footer .container {
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            padding: 0 48px;
+            max-width: 1500px;
+        }
+
+        .footer-bottom {
+            margin-top: 48px;
+            padding-top: 48px;
+            border-top: 1px solid black;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        ul {
+            list-style-position: inside;
+        }
+
+        #footer li {
+            list-style: none;
+        }
+
+        .footer-top-menu li:first-child {
+            margin-top: 0;
+        }
+
+        .footer-top-menu a {
+            display: block;
+            font-size: 24px;
+            font-weight: 600;
+            color: black;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+        .footer-top-menu li {
+            display: block;
+            margin-top: 16px;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+        .footer-top-cs dl:first-child {
+            margin-top: 0;
+        }
+
+        .footer-top-cs dl {
+            display: block;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+        .footer-top-cs dl {
+            display: block;
+            margin-top: 34px;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+        .footer-top::after {
+            clear: both;
+            content: " ";
+            display: table;
+        }
+
+        *::after {
+            box-sizing: inherit;
+        }
+
+        .float-none {
+            float: none !important;
+        }
+
+        .footer-bottom {
+            margin-top: 48px;
+            padding-top: 48px;
+            border-top: 1px solid #000;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+        .footer-bottom-info li {
+            display: inline-block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        .footer-bottom-menu {
+            margin-bottom: 20px;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+        .footer-bottom-menu li {
+            display: inline-block;
+            margin-right: 40px;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+        .footer-bottom-menu a {
+            font-size: 14px;
+            font-weight: 600;
+            color: black;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+        a {
+
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+
+        .footer-bottom-info {
+            font-size: 14px;
+            font-weight: 400;
+            color: #777;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+        .footer-bottom-info {
+            font-size: 14px;
+            font-weight: 400;
+            color: #777;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+        .footer-bottom-info ul {
+            margin-bottom: 8px;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+
+        .footer-bottom-copy {
+            display: block;
+            margin-top: 16px;
+            margin-bottom: 24px;
+            font-family: "Mark Pro";
+            font-size: 12px;
+            font-weight: 400;
+            color: #777;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+        .footer-bottom-copy span {
+            display: inline-block;
+            margin-right: 4px;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+
+        .footer-bottom-sns__link:first-child {
+            margin-left: 0;
+        }
+
+        .footer-bottom-sns__link {
+            display: inline-block;
+            margin-left: 14px;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+
+        .footer-bottom-sns__link {
+            display: inline-block;
+            margin-left: 14px;
+            transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- footer -->
+    <section class="section fp-auto-height">
+        <footer class="footer">
+            <div class="container">
+                <!--footer-top -->
+                <div class="footer-top">
+                    <!--footer-top-menu -->
+                    <div class="footer-top-menu float-left">
+                        <ul>
+                            <li><a href="#">기업 및 단체구매안내</a></li>
+
+                            <li><a href="#">가맹상담신청</a></li>
+                            <li><a href="#">사이버신문고</a></li>
+                        </ul>
+                    </div>
+                    <!--footer-top-menu -->
+                    <!--footer-top-cs -->
+                    <div class="footer-top-cs float-right">
+                        <dl>
+                            <dt>
+                                Address
+                            </dt>
+                            <dd>
+                                서울특별시 강남구 도산대로 51길 16 (강남구 신사동 654-13), GFFG
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                Customer Center
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        고객센터 : 02-545-9377 │ 팩스 : 02-545-9377
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <!-- footer-top-cs -->
+                </div>
+                <!-- footer-top -->
+                <!-- footer-bottom -->
+                <div class="footer-bottom">
+                    <div class="float-left float-none">
+                        <!-- footer-bottom-menu -->
+                        <div class="footer-bottom-menu">
+                            <ul>
+                                <li><a href="#" class="footer-bottom-menu__link">이용약관</a></li>
+                                <li><a href="#" class="footer-bottom-menu__link"><strong>개인정보처리방침</strong></a></li>
+                                <li><a href="#" class="footer-bottom-menu__link">위치기반서비스
+                                        이용약관</a></li>
+                                <!-- <li><a href="#" class="footer-bottom-menu__link">사이트맵</a></li> -->
+                                <li><a href="#" class="footer-bottom-menu__link modal-button"
+                                        data-target="modal-popup1">이메일
+                                        무단수집거부</a></li>
+                                <li><a href="#" class="footer-bottom-menu__link modal-button"
+                                        data-target="modal-popup2">법적고지</a></li>
+                                <li><a href="#" target="_blank" class="footer-bottom-menu__link">사업자정보확인</a></li>
+                            </ul>
+                        </div>
+                        <!-- footer-bottom-menu -->
+                        <!-- footer-bottom-info -->
+                        <div class="footer-bottom-info">
+                            <ul class="footer-bottom-info__address">
+                                <li>
+                                    서울특별시 강남구 도산대로 51길 16 (강남구 신사동 654-13), GFFG
+                                </li>
+                                <li>
+                                    고객센터 : 1577-4410 <span class="span">|</span> 팩스 : 02-2058-6777
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    대표이사 : 이영상 |
+                                </li>
+                                <li>
+                                    개인정보보호책임자 : 장재호 |
+                                </li>
+                                <li>
+                                    사업자등록번호 : 404-86-01054 |
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    통신판매업종신고증 : 제 2018-서울중구-0353호 |
+                                </li>
+                                <li>
+                                    대표이메일 : helpmaster@twosome.co.kr
+                                </li>
+                            </ul>
+                        </div>
+                        <!--footer-bottom-info !-->
+                        <div class="footer-bottom-copy">
+                            <span>Copyright ⓒ 2021 A TWOSOME PLACE Co., LTD.</span>
+                            <span>All Rights Reserved.</span>
+                        </div>
+                    </div>
+
+                    <!-- <footer-bottom-sns -->
+                    <div class="footer-bottom-sns float-right">
+                        <a href="https://www.facebook.com/cafeknotted.official" class="footer-bottom-sns__link icon"
+                            title="새창 열림">
+                            <span>페이스북</span>
+                        </a>
+                        <a href="https://www.instagram.com/cafeknotted/?hl=ko" class="footer-bottom-sns__link icon"
+                            title="새창 열림">
+                            <span>인스타그램</span>
+                        </a>
+                        <a href="https://pf.kakao.com/_AUDFj" class="footer-bottom-sns__link icon" title="새창 열림">
+                            <span>카카오톡</span>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </footer>
+</body>
+
+</html>

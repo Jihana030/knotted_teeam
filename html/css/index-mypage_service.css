@@ -1,0 +1,56 @@
+*{
+    padding: 0; margin: 0;
+    outline: none;
+    background-color: #fdfaf2;    
+    font-family: 'nanumsquare';
+    list-style: none;
+}
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.con_serv {
+    width: inherit;
+}
+
+.Asked, .ftfinq {
+    display: block;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    font-size: 20px;
+    background-color: #fefdfa;
+    height: 50px;
+    padding: 40px 5px 5px 30px;
+}
+
+.ulasked {
+    line-height: 35px;
+}
+
+.liasked {
+    border-bottom: 1px solid #333;
+    padding-left: 50px;
+}
+
+.servecon {
+    position: relative;
+    height: 331px;
+    background-image: url("/프로젝트 퍼스트/디자인/고객센터배너2.png");
+}
+
+.servtime {
+    position: absolute;
+    background-color: transparent;
+    right: calc(20%);
+    top: calc(30%);
+    font-size: 25px;
+}
+
+.servtime1 {
+    background-color: transparent;
+}
